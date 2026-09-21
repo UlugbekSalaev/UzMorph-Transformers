@@ -3,7 +3,7 @@ Scientific Training & Evaluation Runner for Uzbek Morphological Analysis.
 
 Includes:
 1. Real-time Timer & ETA tracking per epoch
-2. Class-Balanced News Silver Dataset & Focal Loss optimization
+2. Class-Balanced News Corpus Enrichment & Focal Loss optimization
 3. Cosine Annealing Learning Rate Scheduler
 4. Automatic Matplotlib/Seaborn plot generation (4 high-res figures)
 5. UzMorphAnalyser benchmark comparison & LaTeX/CSV table generation

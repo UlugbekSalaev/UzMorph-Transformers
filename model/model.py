@@ -258,7 +258,7 @@ class UzbekMorphModel(nn.Module):
 
                 loss = focal_fn(logit_flat, target_flat)
                 
-                # Zero out loss strictly for <UNK> elements to prevent silver-gap poisoning
+                # Zero out loss strictly for <UNK> elements to prevent unannotated-gap poisoning
                 unk_mask_flat = (target_flat != 1).float()
                 loss = loss * unk_mask_flat
                 

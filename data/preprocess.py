@@ -588,16 +588,16 @@ def run_preprocessing_pipeline(cfg) -> Dict:
     print("=" * 60)
 
     # 1. Load the Single PURE Unified Corrected Dataset
-    print("\n[1/6] UD va Silver CoNLL-U birlashtirilgan toza ma'lumotlarni yuklash...")
+    print("\n[1/6] UD hamda Qo'shimcha(News) CoNLL-U toza ma'lumotlarni yuklash...")
     unified_path = os.path.join(cfg.DATASET_DIR, 'Uzbek_Morphology_Corpus.conllu')
     all_sents = parse_conllu_file(unified_path)
     
-    # 2. Extract Gold (manual annotated) vs Silver (news generated)
+    # 2. Extract Gold (manual annotated) vs Extended (news generated)
     gold_sents = []
     silver_sents = []
     
     for sent in all_sents:
-        # A sentence where mostly every POS is '_' is a silver dataset entry
+        # A sentence where mostly every POS is '_' is an extended dataset entry
         pos_tags = [t['pos'] for t in sent['tokens']]
         if len(pos_tags) > 0 and pos_tags.count('_') > len(pos_tags) * 0.8:
             silver_sents.append(sent)
@@ -609,7 +609,7 @@ def run_preprocessing_pipeline(cfg) -> Dict:
     random.shuffle(gold_sents)
     
     total_gold = len(gold_sents)
-    dev_size = int(total_gold * cfg.dev_ratio * 1.25)  # slight boost since silver is missing
+    dev_size = int(total_gold * cfg.dev_ratio * 1.25)  # slight boost since extended is missing
     test_size = int(total_gold * cfg.dev_ratio * 1.25)
     
     test_split = gold_sents[:test_size]
@@ -626,7 +626,7 @@ def run_preprocessing_pipeline(cfg) -> Dict:
     }
 
     print(f"  Jami Birlashtirilgan gaplar: {len(all_sents):,}")
-    print(f"  --> Gold gaplar: {len(gold_sents):,} | Silver gaplar: {len(silver_sents):,}")
+    print(f"  --> Asosiy (Annotatsiyalangan) gaplar: {len(gold_sents):,} | Qo'shimcha gaplar: {len(silver_sents):,}")
     print(f"  --> Train qismi: {len(train_split):,}")
     print(f"  --> Validation (Dev) qismi: {len(dev_split):,}")
     print(f"  --> Test qismi: {len(test_split):,}")
