@@ -241,13 +241,18 @@ class UzbekMorphModel(nn.Module):
         else:
             valid_mask = torch.ones_like(targets['pos'], dtype=torch.bool)
 
-        # 1. Classification task losses using Class-Weighted Focal Loss
         for task_name, task_logit in logits.items():
             if task_name in targets:
                 target = targets[task_name]
-                focal_fn = FocalLoss(gamma=2.0, ignore_index=0)
-
                 B, S, C = task_logit.shape
+                
+                # Dynamic Alpha generation modifying Focal Loss distributions
+                # Significantly limits (0.1 weight) the <NONE> classification (Index 1) preventing Negative Transfer collapse
+                alpha_w = torch.ones(C, device=task_logit.device)
+                if C > 1:
+                    alpha_w[1] = 0.1
+                
+                focal_fn = FocalLoss(gamma=2.0, alpha=alpha_w, ignore_index=0)
                 logit_flat = task_logit.view(B * S, C)
                 target_flat = target.view(B * S)
 
