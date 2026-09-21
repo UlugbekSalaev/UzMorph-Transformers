@@ -115,6 +115,8 @@ def run_scientific_pipeline(epochs: int = 35, batch_size: int = 32, lr: float = 
 
     history = {'train_loss': [], 'dev_loss': [], 'dev_exact': [], 'dev_pos_acc': [], 'dev_lemma_acc': []}
     best_exact_match = 0.0
+    early_stopping_patience = 5
+    epochs_no_improve = 0
 
     checkpoint_path = os.path.join(cfg.CHECKPOINT_DIR, "Model_E_Scientific.pt")
     os.makedirs(cfg.CHECKPOINT_DIR, exist_ok=True)
@@ -177,6 +179,9 @@ def run_scientific_pipeline(epochs: int = 35, batch_size: int = 32, lr: float = 
         is_best = dev_metrics['exact_match'] > best_exact_match
         if is_best:
             best_exact_match = dev_metrics['exact_match']
+            epochs_no_improve = 0
+        else:
+            epochs_no_improve += 1
             
         if is_best or not os.path.exists(checkpoint_path) or epoch == epochs:
             torch.save({
