@@ -1,0 +1,38 @@
+# Virtual environments
+venv/
+env/
+.env
+.venv
+ENV/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Papers and personal files (Keep manuscript .tex if you want, but ignore compiled PDFs/Docs unless specifically needed)
+*.pdf
+*.docx
+*.doc
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Large datasets (If your dataset is >100MB, you should use Git LFS. Otherwise, ignore raw massive datasets and only keep the clean train/dev/test splits)
+# dataset/*.csv
+# dataset/*.conllu
+
+# Model weights (PyTorch)
+# Do NOT upload massive .pth files directly without Git LFS! 
+# For reviewers, either upload a lightweight version, or use Git LFS, or provide a Google Drive link in README.
+*.pth
+*.pt
+*.ckpt
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.tex

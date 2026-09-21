@@ -1,0 +1,118 @@
+{
+  "language": "Uzbek (o'zbek tili)",
+  "standard": "UniMorph Schema v2.0",
+  "categories": {
+    "bo'lishsizlik_inkor_negation": {
+      "-ma-": {
+        "tag": "NEG",
+        "description": "Fe'l bo'lishsizlik formanti (masalan: kelmadi, aldamayotgan)"
+      },
+      "-mas": {
+        "tag": "NEG;FUT",
+        "description": "Bo'lishsiz kelasi zamon / sifatdosh (masalan: aldamas)"
+      },
+      "-may": {
+        "tag": "NEG;PRS",
+        "description": "Bo'lishsiz ravishdosh (masalan: o'ylamay)"
+      },
+      "-magan": {
+        "tag": "NEG;PST;IND",
+        "description": "Bo'lishsiz o'tgan zamon sifatdoshi (masalan: ko'rmagan)"
+      }
+    },
+    "so'roq_interrogative": {
+      "-mi": {
+        "tag": "INT",
+        "description": "So'roq yuklamasi (masalan: keldimi?, kitobmi?)"
+      }
+    },
+    "kelishiklar_noun_cases": {
+      "-ning": {
+        "tag": "GEN",
+        "description": "Qaratqich kelishigi"
+      },
+      "-ga / -ka / -qa": {
+        "tag": "DAT",
+        "description": "Jo'nalish kelishigi"
+      },
+      "-ni": {
+        "tag": "ACC",
+        "description": "Tushum kelishigi"
+      },
+      "-da": {
+        "tag": "LOC",
+        "description": "O'rin-payt kelishigi"
+      },
+      "-dan": {
+        "tag": "ABL",
+        "description": "Chiqish kelishigi"
+      },
+      "(bosh_kelishik)": {
+        "tag": "NOM",
+        "description": "Bosh kelishik"
+      }
+    },
+    "egalik_possessives": {
+      "-im / -m": {
+        "tag": "PSS1S",
+        "description": "1-shaxs birlik egalik (Mening)"
+      },
+      "-ing / -ng": {
+        "tag": "PSS2S",
+        "description": "2-shaxs birlik egalik (Sening)"
+      },
+      "-i / -si": {
+        "tag": "PSS3S",
+        "description": "3-shaxs birlik egalik (Uning)"
+      },
+      "-imiz / -miz": {
+        "tag": "PSS1P",
+        "description": "1-shaxs ko'plik egalik (Bizning)"
+      },
+      "-ingiz / -ngiz": {
+        "tag": "PSS2P",
+        "description": "2-shaxs ko'plik egalik (Sizning)"
+      },
+      "-i / -lari": {
+        "tag": "PSS3P",
+        "description": "3-shaxs ko'plik egalik (Ularning)"
+      }
+    },
+    "son_number": {
+      "-lar": {
+        "tag": "PL",
+        "description": "Ko'plik shakli"
+      },
+      "(birlik)": {
+        "tag": "SG",
+        "description": "Birlik shakli"
+      }
+    },
+    "fe'l_zamon_mayllari_verb_tense_mood": {
+      "-di": {
+        "tag": "PFV;FH;PST",
+        "description": "Aniq o'tgan zamon"
+      },
+      "-gan": {
+        "tag": "IND;PST",
+        "description": "O'tgan zamon sifatdoshi"
+      },
+      "-yap / -yapti": {
+        "tag": "PROG;IND;PRS",
+        "description": "Hozirgi davomli zamon"
+      },
+      "-ayotgan / -yotgan": {
+        "tag": "PROG;IND",
+        "description": "Hozirgi-kelasi zamon sifatdoshi"
+      },
+      "-sa": {
+        "tag": "SBJV",
+        "description": "Shart/Istak mayli"
+      },
+      "-r / -ar": {
+        "tag": "FUT;COND",
+        "description": "Gumon kelasi zamon"
+      }
+    }
+  }
+}
