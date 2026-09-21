@@ -95,6 +95,7 @@ class MorphDataset(Dataset):
 
             # Lemma character IDs
             lemma_chars = self._char_encode(token['lemma'])
+            lemma_chars.append(3) # <EOS> token
             lemma_chars_list.append(lemma_chars)
 
         return {
