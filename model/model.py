@@ -252,19 +252,14 @@ class UzbekMorphModel(nn.Module):
                 if C > 1:
                     alpha_w[1] = 0.1
                 
-                focal_fn = FocalLoss(gamma=2.0, alpha=alpha_w, ignore_index=0)
+                focal_fn = FocalLoss(gamma=2.0, alpha=alpha_w, ignore_index=0, reduction='mean')
                 logit_flat = task_logit.view(B * S, C)
-                target_flat = target.view(B * S)
+                target_flat = target.view(B * S).clone()
+                
+                # Dynamically map <UNK> values (index 1) into the ignore_index (0) to eliminate unannotated silver-gaps
+                target_flat[target_flat == 1] = 0
 
                 loss = focal_fn(logit_flat, target_flat)
-                
-                # Zero out loss strictly for <UNK> elements to prevent unannotated-gap poisoning
-                unk_mask_flat = (target_flat != 1).float()
-                loss = loss * unk_mask_flat
-                
-                # Average loss only over valid explicit predictions avoiding tensor explosions
-                valid_count = unk_mask_flat.sum() + 1e-6
-                loss = loss.sum() / valid_count
                 
                 task_losses[task_name] = loss
                 total_unweighted = total_unweighted + loss
