@@ -609,13 +609,13 @@ def run_preprocessing_pipeline(cfg) -> Dict:
     random.shuffle(gold_sents)
     
     total_gold = len(gold_sents)
-    dev_size = int(total_gold * cfg.dev_ratio * 1.25)  # slight boost since extended is missing
-    test_size = int(total_gold * cfg.dev_ratio * 1.25)
+    dev_size = int(total_gold * cfg.dev_ratio) # Aniq 10% Gold (Validation)
+    test_size = int(total_gold * cfg.dev_ratio) # Aniq 10% Gold (Test)
     
     test_split = gold_sents[:test_size]
     dev_split = gold_sents[test_size:test_size + dev_size]
     
-    # Train gets all remaining gold + all silver
+    # Train = Qolgan Gold (80%) + Barcha Silver
     train_split = gold_sents[test_size + dev_size:] + silver_sents
     random.shuffle(train_split)
     
