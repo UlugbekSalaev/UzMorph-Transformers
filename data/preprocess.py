@@ -592,32 +592,29 @@ def run_preprocessing_pipeline(cfg) -> Dict:
     unified_path = os.path.join(cfg.DATASET_DIR, 'Uzbek_Morphology_Corpus.conllu')
     all_sents = parse_conllu_file(unified_path)
     
-    # Gold vs Silver separation
-    # As per our construction, the first 2,859 sentences are Pure Gold UD.
-    gold_sents = all_sents[:2859]
-    silver_sents = all_sents[2859:]
-    
-    # 2. Xolislik (unbiased) uchun Gold ni qat'iy aralashtirish
+    # 2. Xolislik (unbiased) uchun qat'iy aralashtirish
     random.seed(cfg.seed)
-    random.shuffle(gold_sents)
+    random.shuffle(all_sents)
     
-    # 3. Gold ni 80:10:10 formatiga qismlarga bo'lish
-    total_gold = len(gold_sents)
-    dev_size = int(total_gold * cfg.dev_ratio)
-    test_size = int(total_gold * cfg.dev_ratio)
+    # 3. Yagona bazani 80:10:10 formatiga qismlarga bo'lish
+    total_sents = len(all_sents)
+    dev_size = int(total_sents * cfg.dev_ratio)
+    test_size = int(total_sents * cfg.dev_ratio)
     
-    test_split = gold_sents[:test_size]
-    dev_split = gold_sents[test_size:test_size + dev_size]
-    train_split = gold_sents[test_size + dev_size:]
+    test_split = all_sents[:test_size]
+    dev_split = all_sents[test_size:test_size + dev_size]
+    train_split = all_sents[test_size + dev_size:]
     
     ud_data = {
-        'train': train_split + silver_sents,
+        'train': train_split,
         'dev': dev_split,
         'test': test_split
     }
 
-    print(f"  Gold (Original) gaplar: {len(gold_sents):,}")
-    print(f"  Silver (News/Corpus) gaplar: {len(silver_sents):,}")
+    print(f"  Jami Birlashtirilgan gaplar: {total_sents:,}")
+    print(f"  --> Train qismi (80%): {len(train_split):,}")
+    print(f"  --> Validation (Dev) qismi (10%): {len(dev_split):,}")
+    print(f"  --> Test qismi (10%): {len(test_split):,}")
     print(f"  Yakuniy Dataset => Train: {len(ud_data['train']):,} | Dev: {len(ud_data['dev'])} | Test: {len(ud_data['test'])}")
 
     # Sifat Kafolati Tekshiruvi
