@@ -1,4 +1,4 @@
-# UzMorph-Transformers: Joint Transformer-based Morphological Analyzer for Uzbek
+# UzMorph-Transformers: Transformer-based Uzbek Neural Morphological Analyzer
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
 ![Python 3.8+](https://img.shields.io/badge/python-3.8+-green.svg)
