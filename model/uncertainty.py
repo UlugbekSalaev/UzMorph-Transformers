@@ -39,7 +39,8 @@ class UncertaintyWeighting(nn.Module):
 
         for task, loss_val in losses.items():
             if task in self.log_vars:
-                s_k = self.log_vars[task]
+                # Clamp log variance to prevent Bayesian collapse (-3.0 to 3.0 bounds)
+                s_k = torch.clamp(self.log_vars[task], min=-3.0, max=3.0)
                 # Weighted loss: exp(-s_k) * L_k + 0.5 * s_k
                 weighted_task_loss = torch.exp(-s_k) * loss_val + 0.5 * s_k
                 total_loss = total_loss + weighted_task_loss
