@@ -257,6 +257,15 @@ class UzbekMorphModel(nn.Module):
                 target_flat = target.view(B * S)
 
                 loss = focal_fn(logit_flat, target_flat)
+                
+                # Zero out loss strictly for <UNK> elements to prevent silver-gap poisoning
+                unk_mask_flat = (target_flat != 1).float()
+                loss = loss * unk_mask_flat
+                
+                # Average loss only over valid explicit predictions avoiding tensor explosions
+                valid_count = unk_mask_flat.sum() + 1e-6
+                loss = loss.sum() / valid_count
+                
                 task_losses[task_name] = loss
                 total_unweighted = total_unweighted + loss
 

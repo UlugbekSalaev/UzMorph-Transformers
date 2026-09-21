@@ -592,18 +592,32 @@ def run_preprocessing_pipeline(cfg) -> Dict:
     unified_path = os.path.join(cfg.DATASET_DIR, 'Uzbek_Morphology_Corpus.conllu')
     all_sents = parse_conllu_file(unified_path)
     
-    # 2. Xolislik (unbiased) uchun qat'iy aralashtirish
+    # 2. Extract Gold (manual annotated) vs Silver (news generated)
+    gold_sents = []
+    silver_sents = []
+    
+    for sent in all_sents:
+        # A sentence where mostly every POS is '_' is a silver dataset entry
+        pos_tags = [t['pos'] for t in sent['tokens']]
+        if len(pos_tags) > 0 and pos_tags.count('_') > len(pos_tags) * 0.8:
+            silver_sents.append(sent)
+        else:
+            gold_sents.append(sent)
+            
+    # 3. Yagona bazani qat'iy qismlarga bo'lish - Dev/Test FAQAT Gold'dan olinadi!
     random.seed(cfg.seed)
-    random.shuffle(all_sents)
+    random.shuffle(gold_sents)
     
-    # 3. Yagona bazani 80:10:10 formatiga qismlarga bo'lish
-    total_sents = len(all_sents)
-    dev_size = int(total_sents * cfg.dev_ratio)
-    test_size = int(total_sents * cfg.dev_ratio)
+    total_gold = len(gold_sents)
+    dev_size = int(total_gold * cfg.dev_ratio * 1.25)  # slight boost since silver is missing
+    test_size = int(total_gold * cfg.dev_ratio * 1.25)
     
-    test_split = all_sents[:test_size]
-    dev_split = all_sents[test_size:test_size + dev_size]
-    train_split = all_sents[test_size + dev_size:]
+    test_split = gold_sents[:test_size]
+    dev_split = gold_sents[test_size:test_size + dev_size]
+    
+    # Train gets all remaining gold + all silver
+    train_split = gold_sents[test_size + dev_size:] + silver_sents
+    random.shuffle(train_split)
     
     ud_data = {
         'train': train_split,
@@ -611,10 +625,11 @@ def run_preprocessing_pipeline(cfg) -> Dict:
         'test': test_split
     }
 
-    print(f"  Jami Birlashtirilgan gaplar: {total_sents:,}")
-    print(f"  --> Train qismi (80%): {len(train_split):,}")
-    print(f"  --> Validation (Dev) qismi (10%): {len(dev_split):,}")
-    print(f"  --> Test qismi (10%): {len(test_split):,}")
+    print(f"  Jami Birlashtirilgan gaplar: {len(all_sents):,}")
+    print(f"  --> Gold gaplar: {len(gold_sents):,} | Silver gaplar: {len(silver_sents):,}")
+    print(f"  --> Train qismi: {len(train_split):,}")
+    print(f"  --> Validation (Dev) qismi: {len(dev_split):,}")
+    print(f"  --> Test qismi: {len(test_split):,}")
     print(f"  Yakuniy Dataset => Train: {len(ud_data['train']):,} | Dev: {len(ud_data['dev'])} | Test: {len(ud_data['test'])}")
 
     # Sifat Kafolati Tekshiruvi
