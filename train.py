@@ -208,12 +208,7 @@ def run_scientific_pipeline(epochs: int = 35, batch_size: int = 32, lr: float = 
     plot_training_curves(history, figures_dir)
     plot_per_feature_f1(eval_data['per_feature_stats'], figures_dir)
 
-    all_test_tokens = [t for s in data['ud_data']['test'] for t in s['tokens']]
-    fsm_res = simulate_uzmorph_analyser(all_test_tokens, data['cse_entries'])
-    plot_benchmark_comparison(fsm_res['exact_match'], metrics['exact_match_accuracy'], figures_dir)
-
     total_pipeline_time = time.time() - overall_start_time
-
     print("\n" + "=" * 75)
     print("ILMIY TAJRIBA MUVAFFAQIYATLI YAKUNLANDI!")
     print(f"  Umumiy bajarilish vaqti: {format_time(total_pipeline_time)}")
