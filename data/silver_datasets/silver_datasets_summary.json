@@ -1,8 +1,0 @@
-{
-  "total_sources": 2,
-  "total_sentences": 14978,
-  "sources": {
-    "uzbek_corpus": 10000,
-    "news_2020_30K": 4978
-  }
-}

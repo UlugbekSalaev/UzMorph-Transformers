@@ -589,7 +589,7 @@ def run_preprocessing_pipeline(cfg) -> Dict:
 
     # 1. Load the Single PURE Unified Corrected Dataset
     print("\n[1/6] UD va Silver CoNLL-U birlashtirilgan toza ma'lumotlarni yuklash...")
-    unified_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'Uzbek_Unified_Sentence_Corpus_35K.conllu')
+    unified_path = os.path.join(cfg.DATASET_DIR, 'Uzbek_Unified_Sentence_Corpus_35K.conllu')
     all_sents = parse_conllu_file(unified_path)
     
     # Gold vs Silver separation
