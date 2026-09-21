@@ -25,7 +25,6 @@ from config import cfg
 from data.preprocess import run_preprocessing_pipeline
 from data.dataset import MorphDataset, collate_fn, ALL_TASKS
 from model.model import UzbekMorphModel
-from train import evaluate_model
 from evaluate import main_evaluate, evaluate_test_set, save_evaluation_results
 from benchmark_uzmorph import run_benchmark, simulate_uzmorph_analyser
 from evaluate_visuals import (
