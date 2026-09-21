@@ -42,6 +42,31 @@ def format_time(seconds: float) -> str:
     return f"{m:02d}m {s:02d}s"
 
 
+def evaluate_model(model, dev_loader, label_vocabs, device):
+    model.eval()
+    total_loss = 0.0
+    with torch.no_grad():
+        for batch in dev_loader:
+            char_ids = batch['char_ids'].to(device)
+            lengths = batch['lengths'].to(device)
+            lemma_chars = batch['lemma_chars'].to(device)
+            targets = {k: batch[k].to(device) for k in ALL_TASKS if k in batch}
+            targets['lemma_chars'] = lemma_chars
+            outputs = model(char_ids, lengths=lengths, target_lemma_chars=lemma_chars)
+            loss_dict = model.compute_loss(outputs, targets)
+            total_loss += loss_dict['total_loss'].item()
+    
+    avg_loss = total_loss / len(dev_loader)
+    from evaluate import evaluate_test_set
+    metrics = evaluate_test_set(model, dev_loader, label_vocabs, device)
+    
+    return {
+        'loss': avg_loss,
+        'exact_match': metrics.get('exact_match_accuracy', 0.0) / 100.0,
+        'acc_pos': metrics.get('pos_accuracy', 0.0) / 100.0
+    }
+
+
 def run_scientific_pipeline(epochs: int = 35, batch_size: int = 32, lr: float = 1e-3):
     """Run full scientific pipeline with real-time timer and visual figure generation."""
     print("=" * 75)
@@ -122,7 +147,7 @@ def run_scientific_pipeline(epochs: int = 35, batch_size: int = 32, lr: float = 
 
         scheduler.step()
         avg_train_loss = train_loss / len(train_loader)
-        dev_metrics = evaluate_model(model, dev_loader, device)
+        dev_metrics = evaluate_model(model, dev_loader, data['label_vocabs'], device)
 
         history['train_loss'].append(avg_train_loss)
         history['dev_loss'].append(dev_metrics['loss'])
