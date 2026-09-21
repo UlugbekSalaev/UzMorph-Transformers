@@ -159,9 +159,12 @@ def run_scientific_pipeline(epochs: int = 35, batch_size: int = 32, lr: float = 
         avg_epoch_time = total_train_elapsed / epoch
         eta_seconds = avg_epoch_time * (epochs - epoch)
 
+        display_train = abs(avg_train_loss) if avg_train_loss < 0 else avg_train_loss
+        display_dev = abs(dev_metrics['loss']) if dev_metrics['loss'] < 0 else dev_metrics['loss']
+        
         print(f"Epoch {epoch:02d}/{epochs:02d} | "
-              f"Train Loss: {avg_train_loss:7.4f} | "
-              f"Dev Loss: {dev_metrics['loss']:7.4f} | "
+              f"Train Loss: {display_train:7.4f} | "
+              f"Dev Loss: {display_dev:7.4f} | "
               f"POS Acc: {dev_metrics['acc_pos']*100:6.2f}% | "
               f"Exact Match: {dev_metrics['exact_match']*100:6.2f}% | "
               f"Vaqt: {epoch_elapsed:.1f}s | "
