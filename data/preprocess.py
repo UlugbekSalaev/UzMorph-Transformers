@@ -598,8 +598,8 @@ def run_preprocessing_pipeline(cfg) -> Dict:
     
     for sent in all_sents:
         # A sentence where mostly every POS is '_' is an extended dataset entry
-        pos_tags = [t['pos'] for t in sent['tokens']]
-        if len(pos_tags) > 0 and pos_tags.count('_') > len(pos_tags) * 0.8:
+        pos_tags = [t.get('upos', '_') for t in sent['tokens']]
+        if len(pos_tags) > 0 and pos_tags.count('_') >= len(pos_tags) * 0.8:
             silver_sents.append(sent)
         else:
             gold_sents.append(sent)
