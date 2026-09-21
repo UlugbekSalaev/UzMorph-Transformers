@@ -58,7 +58,8 @@ def evaluate_model(model, dev_loader, label_vocabs, device):
     
     avg_loss = total_loss / len(dev_loader)
     from evaluate import evaluate_test_set
-    metrics = evaluate_test_set(model, dev_loader, label_vocabs, device)
+    eval_data = evaluate_test_set(model, dev_loader, label_vocabs, device)
+    metrics = eval_data['metrics']
     
     return {
         'loss': avg_loss,
