@@ -75,7 +75,7 @@ class ModelConfig:
     max_epochs = 50
     patience = 5
     grad_clip = 1.0
-    dev_ratio = 0.2  # 20% of train for dev, 20% for test (60-20-20 Gold split)
+    dev_ratio = 0.1  # 10% for dev, 10% for test (80-10-10 Gold split)
     seed = 42
 
     # Consistency
