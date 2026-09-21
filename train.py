@@ -63,7 +63,8 @@ def evaluate_model(model, dev_loader, label_vocabs, device):
     return {
         'loss': avg_loss,
         'exact_match': metrics.get('exact_match_accuracy', 0.0) / 100.0,
-        'acc_pos': metrics.get('pos_accuracy', 0.0) / 100.0
+        'acc_pos': metrics.get('pos_accuracy', 0.0) / 100.0,
+        'lemma_acc': metrics.get('lemma_accuracy', 0.0) / 100.0
     }
 
 
@@ -111,7 +112,7 @@ def run_scientific_pipeline(epochs: int = 35, batch_size: int = 32, lr: float = 
     optimizer = torch.optim.AdamW(model.parameters(), lr=lr, weight_decay=1e-4)
     scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=epochs, eta_min=1e-5)
 
-    history = {'train_loss': [], 'dev_loss': [], 'dev_exact': [], 'dev_pos_acc': []}
+    history = {'train_loss': [], 'dev_loss': [], 'dev_exact': [], 'dev_pos_acc': [], 'dev_lemma_acc': []}
     best_exact_match = 0.0
 
     checkpoint_path = os.path.join(cfg.CHECKPOINT_DIR, "Model_E_Scientific.pt")
@@ -153,6 +154,7 @@ def run_scientific_pipeline(epochs: int = 35, batch_size: int = 32, lr: float = 
         history['dev_loss'].append(dev_metrics['loss'])
         history['dev_exact'].append(dev_metrics['exact_match'])
         history['dev_pos_acc'].append(dev_metrics['acc_pos'])
+        history['dev_lemma_acc'].append(dev_metrics['lemma_acc'])
 
         epoch_elapsed = time.time() - epoch_start
         total_train_elapsed = time.time() - train_start_time
@@ -166,12 +168,16 @@ def run_scientific_pipeline(epochs: int = 35, batch_size: int = 32, lr: float = 
               f"Train Loss: {display_train:7.4f} | "
               f"Dev Loss: {display_dev:7.4f} | "
               f"POS Acc: {dev_metrics['acc_pos']*100:6.2f}% | "
-              f"Exact Match: {dev_metrics['exact_match']*100:6.2f}% | "
+              f"Lemma: {dev_metrics['lemma_acc']*100:6.2f}% | "
+              f"Exact: {dev_metrics['exact_match']*100:6.2f}% | "
               f"Vaqt: {epoch_elapsed:.1f}s | "
               f"ETA: {format_time(eta_seconds)}")
 
-        if dev_metrics['exact_match'] > best_exact_match:
+        is_best = dev_metrics['exact_match'] > best_exact_match
+        if is_best:
             best_exact_match = dev_metrics['exact_match']
+            
+        if is_best or not os.path.exists(checkpoint_path) or epoch == epochs:
             torch.save({
                 'epoch': epoch,
                 'model_state_dict': model.state_dict(),

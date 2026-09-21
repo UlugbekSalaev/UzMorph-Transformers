@@ -51,16 +51,15 @@ def plot_training_curves(history: Dict, save_dir: str):
     # Loss curve
     ax1.plot(epochs, vis_train_loss, 'b-', label='Train Loss', linewidth=2)
     ax1.plot(epochs, vis_dev_loss, 'r-', label='Dev Loss', linewidth=2)
-    ax1.set_title("Multi-Task Loss Convergence")
     ax1.set_xlabel("Epochs")
     ax1.set_ylabel("Loss")
     ax1.legend()
     ax1.grid(True, linestyle='--', alpha=0.6)
 
     # Dev Accuracy curve
-    ax2.plot(epochs, [a * 100 for a in history['dev_exact']], 'g-', label='Exact Match Acc (%)', linewidth=2)
-    ax2.plot(epochs, [a * 100 for a in history['dev_pos_acc']], 'm-', label='POS Acc (%)', linewidth=2)
-    ax2.set_title("Validation Accuracy Trends")
+    ax2.plot(epochs, [a * 100 for a in history['dev_exact']], 'g-', label='Exact Match', linewidth=2)
+    ax2.plot(epochs, [a * 100 for a in history['dev_pos_acc']], 'm-', label='POS Acc', linewidth=2)
+    ax2.plot(epochs, [a * 100 for a in history.get('dev_lemma_acc', history['dev_pos_acc'])], 'c-', label='Lemma Acc', linewidth=2)
     ax2.set_xlabel("Epochs")
     ax2.set_ylabel("Accuracy (%)")
     ax2.legend()
@@ -97,7 +96,6 @@ def plot_per_feature_f1(per_feature_stats: List[Dict], save_dir: str):
         ax.text(bar.get_x() + bar.get_width() / 2, bar.get_height() + 1.5,
                 f"{val:.1f}%", ha='center', va='bottom', fontsize=9, fontweight='bold')
 
-    ax.set_title("Granular Macro F1-Score Across 14 Morphological Categories")
     ax.set_xlabel("Morphological Category")
     ax.set_ylabel("Macro F1-Score (%)")
     ax.set_ylim(0, 110)
@@ -121,8 +119,7 @@ def plot_gating_distribution(gate_values: List[float], save_dir: str):
 
     ax.axvline(np.mean(gate_values), color='red', linestyle='--', linewidth=2,
                label=f'Mean $g_i$ = {np.mean(gate_values):.3f}')
-    ax.set_title("Adaptive Context-Morphology Gate Activation Distribution ($g_i$)")
-    ax.set_xlabel("Gate Activation Value $g_i$ (0 = Morph, 1 = Context)")
+    ax.set_xlabel("Gate Activation Value $g_i$")
     ax.set_ylabel("Token Count")
     ax.legend()
     ax.grid(True, linestyle='--', alpha=0.6)
@@ -147,7 +144,6 @@ def plot_benchmark_comparison(fsm_acc: float, neural_acc: float, save_dir: str):
         ax.text(bar.get_x() + bar.get_width() / 2, bar.get_height() + 1.5,
                 f"{val:.2f}%", ha='center', va='bottom', fontsize=11, fontweight='bold')
 
-    ax.set_title("Exact Match Accuracy Benchmark Comparison")
     ax.set_ylabel("Exact Match Accuracy (%)")
     ax.set_ylim(0, 100)
     ax.grid(axis='y', linestyle='--', alpha=0.6)
@@ -171,9 +167,8 @@ def plot_confusion_matrix(y_true: List[str], y_pred: List[str], labels: List[str
                 xticklabels=labels, yticklabels=labels, ax=ax,
                 linewidths=.5, cbar_kws={"shrink": .75})
     
-    ax.set_title(title, pad=20)
-    ax.set_xlabel("Predicted Label (Modelning Javobi)", labelpad=10)
-    ax.set_ylabel("True Label (Asl Teg)", labelpad=10)
+    ax.set_xlabel("Predicted Label", labelpad=10)
+    ax.set_ylabel("True Label", labelpad=10)
     
     plt.xticks(rotation=45, ha='right')
     plt.yticks(rotation=0)
