@@ -274,8 +274,11 @@ class UzbekMorphModel(nn.Module):
             lemma_target_flat = lemma_targets.view(B * S * L)
 
             lemma_loss = loss_fn_lemma(lemma_logit_flat, lemma_target_flat)
-            task_losses['lemma'] = lemma_loss
-            total_unweighted = total_unweighted + lemma_loss
+            # 2x ustuvorlik (Booster) - Seq2Seq o'rganishni kuchaytirish
+            weighted_lemma_loss = lemma_loss * 2.0
+            
+            task_losses['lemma'] = weighted_lemma_loss
+            total_unweighted = total_unweighted + weighted_lemma_loss
 
         # 3. Consistency loss
         cons_loss = torch.tensor(0.0, device=lemma_logits.device)
