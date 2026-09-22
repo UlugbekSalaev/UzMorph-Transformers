@@ -53,8 +53,8 @@ If you utilize this repository for academic or commercial research, please cite 
 ```bibtex
 @article{UzMorphNeural2026,
   title={Joint Neural Morphological Analysis for the Uzbek Language: A Multi-Task Approach with Adaptive Context-Morphology Gating},
-  author={Your Name},
-  journal={MDPI Electronics},
+  author={Ulugbek Salaev},
+  journal={MDPI},
   year={2026},
   publisher={MDPI}
 }
