@@ -1,11 +1,11 @@
-# Adaptive Context–Morphology Gating and Grammatical Constraints for Neural Morphological Analysis of Uzbek
+# UzMorph-Transformer | Adaptive Context–Morphology Gating and Grammatical Constraints for Neural Morphological Analysis of Uzbek
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
 ![Python 3.8+](https://img.shields.io/badge/python-3.8+-green.svg)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red.svg)
 ![Status: State-of-the-art](https://img.shields.io/badge/Status-State--of--the--art-orange)
 
-**UzMorph-Transformers** is a state-of-the-art, multi-task deep learning framework for the morphological analysis of the highly agglutinative Uzbek language. 
+**UzMorph-Transformer** is a state-of-the-art, multi-task deep learning framework for the morphological analysis of the highly agglutinative Uzbek language. 
 
 Traditional dictionary-based and finite-state parsers struggle with extreme Out-of-Vocabulary (OOV) rates and contextual homonymy (e.g., distinguishing *ot* as a 'horse' vs 'to throw'). This repository implements a novel neural approach combining a **1D-CNN Character Encoder**, a **Contextual Transformer**, and an **Adaptive Context-Morphology Gating Mechanism** to explicitly resolve contextual ambiguity dynamically.
 
