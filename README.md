@@ -1,4 +1,4 @@
-# UzMorph-Transformers: Neural Uzbek Morphological Analysis using Adaptive Context-Morphology Gating and Grammatical Compatibility
+# Adaptive Context–Morphology Gating and Grammatical Constraints for Neural Morphological Analysis of Uzbek
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
 ![Python 3.8+](https://img.shields.io/badge/python-3.8+-green.svg)
@@ -50,11 +50,12 @@ python demo.py
 ## Citation
 If you utilize this repository for academic or commercial research, please cite our official MDPI publication:
 
+draft 
 ```bibtex
 @article{UzMorphNeural2026,
-  title={Joint Neural Morphological Analysis for the Uzbek Language: A Multi-Task Approach with Adaptive Context-Morphology Gating},
-  author={Ulugbek Salaev},
-  journal={MDPI},
+  title={Adaptive Context–Morphology Gating and Grammatical Constraints for Neural Morphological Analysis of Uzbek},
+  author={Ozod Yusupov, Ulugbek Salaev, Abdusattor Babayarov, Sherzod Kholikulov},
+  journal={AI},
   year={2026},
   publisher={MDPI}
 }
