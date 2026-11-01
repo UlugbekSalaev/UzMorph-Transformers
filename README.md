@@ -19,7 +19,7 @@ The model jointly predicts morphological attributes and lemmas for Uzbek tokens.
 | Silver labeling script | `data/unified_builder.py` |
 | Splitting script | `data/scientific_data.py` |
 | Model | `model/` |
-| Training and evaluation | `run_ai_experiments.py`, `evaluate_ai_ready.py` |
+| Training and evaluation | `run_experiments.py`, `evaluate_ready.py` |
 | Statistics and gate analysis | `analysis/` |
 | Checks of the data statements and of the invalid-combination metric | `verification/` |
 
@@ -44,10 +44,10 @@ Each line compares a recomputed value with the value stated in the manuscript an
 
 ```bash
 # Curriculum training: full model and ablations
-python run_ai_experiments.py --seeds 17 29 43 71 97 --variants full context morph concat no_consistency --regime curriculum --pretrain_epochs 5 --epochs 35
+python run_experiments.py --seeds 17 29 43 71 97 --variants full context morph concat no_consistency --regime curriculum --pretrain_epochs 5 --epochs 35
 
 # Gold-only training, for the comparison with curriculum training
-python run_ai_experiments.py --seeds 17 29 43 71 97 --variants full --regime gold --epochs 35
+python run_experiments.py --seeds 17 29 43 71 97 --variants full --regime gold --epochs 35
 
 # Means, standard deviations and paired tests
 python analysis/paired_tests.py
@@ -85,7 +85,7 @@ Exact values can vary slightly with hardware and PyTorch version.
 | Manuscript | Command | Output |
 |---|---|---|
 | Sections 4.1–4.3: data, Silver cascade, splits | `verification/verify_data.py` | console |
-| Sections 5.1, 5.2, 5.4, 5.5, 5.6: metrics and ablations | `run_ai_experiments.py` | `metrics.json`, `summary_mean_std.csv` |
+| Sections 5.1, 5.2, 5.4, 5.5, 5.6: metrics and ablations | `run_experiments.py` | `metrics.json`, `summary_mean_std.csv` |
 | Sections 5.3, 5.4, 5.5: paired statistics | `analysis/paired_tests.py` | console |
 | Section 5.4: verification of the invalid-combination metric | `verification/verify_icr.py` | console |
 | Section 5.7: gate analysis | `analysis/gate_analysis.py` | console |
@@ -138,8 +138,8 @@ data/                    data loading, Silver labeling, splitting
 model/                   encoders, gate, heads, losses, regularizer
 analysis/                paired statistics and gate analysis
 verification/            checks of the manuscript's data and metric statements
-run_ai_experiments.py    training and ablations
-evaluate_ai_ready.py     evaluation metrics
+run_experiments.py    training and ablations
+evaluate_ready.py     evaluation metrics
 config.py                model and path settings
 ```
 
