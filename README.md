@@ -31,7 +31,7 @@ cd UzMorph-Transformers
 pip install -r requirements.txt
 ```
 
-## Check the data (about 5 minutes, no GPU)
+## Check the data
 
 ```bash
 python verification/verify_data.py
