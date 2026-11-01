@@ -37,7 +37,8 @@ class UzbekMorphModel(nn.Module):
                  encoder_type: str = 'transformer',
                  use_gating: bool = True,
                  use_consistency: bool = True,
-                 use_uncertainty: bool = True):
+                 use_uncertainty: bool = True,
+                 fusion_mode: str = 'gated'):
         super().__init__()
 
         self.cfg = cfg
@@ -46,6 +47,7 @@ class UzbekMorphModel(nn.Module):
         self.use_gating = use_gating
         self.use_consistency = use_consistency
         self.use_uncertainty = use_uncertainty
+        self.fusion_mode = fusion_mode.lower()
 
         # 1. Character Encoder (1D-CNN)
         char_vocab_size = len(label_vocabs['char'])
@@ -59,7 +61,7 @@ class UzbekMorphModel(nn.Module):
         char_out_dim = self.char_encoder.out_dim  # 384 (128 * 3)
 
         # Token Embedding (learnable word embedding / random / pre-trained)
-        self.token_embed = nn.Embedding(50000, cfg.token_embed_dim, padding_idx=0)
+        self.token_embed = nn.Embedding(len(label_vocabs.get('token', {'<PAD>':0,'<UNK>':1})), cfg.token_embed_dim, padding_idx=0)
 
         # Combined representation dimension before contextual encoder
         combined_dim = cfg.token_embed_dim + char_out_dim  # 128 + 384 = 512
@@ -100,17 +102,27 @@ class UzbekMorphModel(nn.Module):
             dropout=cfg.dropout
         )
 
-        # 4. Adaptive Gating Mechanism
-        if self.use_gating:
+        # 4. Fusion / ablation modes
+        self.gating = None
+        self.concat_proj = None
+        if self.fusion_mode == 'gated':
             self.gating = AdaptiveGating(
-                d_ctx=ctx_dim,
-                d_morph=self.morph_encoder.out_dim,
-                d_out=cfg.d_model,
-                dropout=cfg.dropout
+                d_ctx=ctx_dim, d_morph=self.morph_encoder.out_dim,
+                d_out=cfg.d_model, dropout=cfg.dropout
             )
             head_in_dim = cfg.d_model
-        else:
+        elif self.fusion_mode == 'concat':
+            self.concat_proj = nn.Sequential(
+                nn.Linear(ctx_dim + self.morph_encoder.out_dim, cfg.d_model),
+                nn.GELU(), nn.LayerNorm(cfg.d_model), nn.Dropout(cfg.dropout)
+            )
+            head_in_dim = cfg.d_model
+        elif self.fusion_mode == 'context':
             head_in_dim = ctx_dim
+        elif self.fusion_mode == 'morph':
+            head_in_dim = self.morph_encoder.out_dim
+        else:
+            raise ValueError(f'Unknown fusion_mode: {self.fusion_mode}')
 
         # 5. Multi-Task Classification Heads
         self.classification_heads = MultiTaskClassificationHeads(
@@ -195,14 +207,18 @@ class UzbekMorphModel(nn.Module):
         # 3. Morfologik Representation Encoder: (B, S, d_model)
         h_morph = self.morph_encoder(char_feats)
 
-        # 4. Adaptive Gating
-        if self.use_gating:
+        # 4. Fusion / ablation
+        gate_activations = None
+        if self.fusion_mode == 'gated':
             gate_out = self.gating(h_ctx, h_morph)
             h_final = gate_out['h']
             gate_activations = gate_out['gate']
-        else:
+        elif self.fusion_mode == 'concat':
+            h_final = self.concat_proj(torch.cat([h_ctx, h_morph], dim=-1))
+        elif self.fusion_mode == 'context':
             h_final = h_ctx
-            gate_activations = None
+        else:  # morph
+            h_final = h_morph
 
         # 5. Multi-Task Classification Predictions
         class_logits = self.classification_heads(h_final)
@@ -256,9 +272,8 @@ class UzbekMorphModel(nn.Module):
                 logit_flat = task_logit.view(B * S, C)
                 target_flat = target.view(B * S).clone()
                 
-                # Dynamically map <UNK> values (index 1) into the ignore_index (0) to eliminate unannotated silver-gaps
-                target_flat[target_flat == 1] = 0
-
+                # <NONE> is a legitimate morphological state (feature absent), not missing data.
+                # It remains in the loss with a reduced focal alpha weight (0.1), while PAD=0 is ignored.
                 loss = focal_fn(logit_flat, target_flat)
                 
                 task_losses[task_name] = loss

@@ -29,6 +29,8 @@ class MorphDataset(Dataset):
         self.char_vocab = vocabs['char']
         self.unk_char = self.char_vocab.get('<UNK>', 1)
         self.pad_char = self.char_vocab.get('<PAD>', 0)
+        self.token_vocab = vocabs.get('token', {'<PAD>': 0, '<UNK>': 1})
+        self.unk_token = self.token_vocab.get('<UNK>', 1)
 
         # Mapping for features
         self.task_feature_map = {
@@ -68,7 +70,12 @@ class MorphDataset(Dataset):
         else:
             feat_key = self.task_feature_map.get(task, task)
             feats = token.get('features', {})
-            val = feats.get(feat_key, '')
+            if task == 'possession':
+                val = feats.get('Possession', feats.get('Poss', feats.get('Poss_Person', '')))
+            elif task == 'negative':
+                val = feats.get('Polarity', feats.get('Negative', ''))
+            else:
+                val = feats.get(feat_key, '')
 
         if val and val in vocab:
             return vocab[val]
@@ -80,6 +87,7 @@ class MorphDataset(Dataset):
 
         char_ids_list = []
         forms = []
+        token_ids_list = []
         task_labels = {task: [] for task in ALL_TASKS}
         lemma_chars_list = []
 
@@ -88,6 +96,7 @@ class MorphDataset(Dataset):
             char_ids = self._char_encode(token['form'])
             char_ids_list.append(char_ids)
             forms.append(token['form'])
+            token_ids_list.append(self.token_vocab.get(token['form'].lower(), self.unk_token))
 
             # Labels for all 14 tasks
             for task in ALL_TASKS:
@@ -101,6 +110,7 @@ class MorphDataset(Dataset):
         return {
             'char_ids': char_ids_list,
             'forms': forms,
+            'token_ids': token_ids_list,
             'lemma_chars': lemma_chars_list,
             'length': len(tokens),
             **task_labels
@@ -131,12 +141,16 @@ def collate_fn(batch: List[Dict]) -> Dict[str, torch.Tensor]:
             max_lemma_len = max(max_lemma_len, len(lc))
 
     lemma_chars_tensor = torch.zeros(batch_size, max_sent_len, max_lemma_len, dtype=torch.long)
+    token_ids_tensor = torch.zeros(batch_size, max_sent_len, dtype=torch.long)
+    forms_batch = []
 
     for i, item in enumerate(batch):
         sent_len = item['length']
         lengths[i] = sent_len
+        forms_batch.append(item['forms'])
 
         for j in range(sent_len):
+            token_ids_tensor[i, j] = item['token_ids'][j]
             cids = item['char_ids'][j]
             char_ids_tensor[i, j, :len(cids)] = torch.tensor(cids)
             word_lengths[i, j] = len(cids)
@@ -152,6 +166,8 @@ def collate_fn(batch: List[Dict]) -> Dict[str, torch.Tensor]:
         'lengths': lengths,                  # (B,)
         'word_lengths': word_lengths,        # (B, S)
         'lemma_chars': lemma_chars_tensor,   # (B, S, L)
+        'token_ids': token_ids_tensor,         # (B, S)
+        'forms': forms_batch,                  # raw forms for OOV/gate analysis
         **labels,                            # each (B, S)
     }
 

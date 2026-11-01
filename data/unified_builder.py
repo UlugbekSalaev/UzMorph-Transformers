@@ -74,11 +74,11 @@ def build_unified_corpus():
         
         parsed_sents.append((meta, tokens))
 
-    print(f"      {len(gold_memory):,} ta noyob 100% ishonchli (Gold) so'z xususiyatlari xotiraga olindi.")
+    print(f"      {len(gold_memory):,} ta noyob Gold so'z xususiyatlari xotiraga olindi.")
     print(f"      Jami tokenlar: {total_tokens:,}. Shundan bo'shlari (taglanmagan): {blank_tokens:,}")
 
     # 3. Predict & Fill Blanks
-    print("\n[3/4] Barcha bo'shliqlarni algoritmik tahlil orqali to'ldirish (Zero-Fault Standard)...")
+    print("\n[3/4] Barcha bo'shliqlarni algoritmik tahlil orqali to'ldirish...")
     filled_count = 0
     
     with open(OUTPUT_FILE, 'w', encoding='utf-8') as fw:
@@ -100,7 +100,7 @@ def build_unified_corpus():
                 feats = t[5]
                 misc = t[9]
                 
-                # 100% Default Stem Logic (As req by user)
+                # Default stem
                 stem = '_'
 
                 if pos == '_':
@@ -130,7 +130,7 @@ def build_unified_corpus():
                             pos = matched_pos
                             lemma = matched_root
                             stem = matched_root
-                            feats = '_' # Default none for synthetic match, valid logic!
+                            feats = '_' # No features for root matches
                         else:
                             # Fallback
                             if frm.istitle():

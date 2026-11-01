@@ -41,7 +41,7 @@ class MultiTaskClassificationHeads(nn.Module):
         self.task_names = []
 
         for task_name, vocab in label_vocabs.items():
-            if task_name in ['char', 'bies']:
+            if task_name in ['char', 'bies', 'token'] or len(vocab) <= 2:
                 continue
             self.task_names.append(task_name)
             self.heads[task_name] = SingleClassificationHead(

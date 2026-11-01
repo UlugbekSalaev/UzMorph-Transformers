@@ -1,0 +1,1531 @@
+# sent_id = cairo-1
+# parallel_id = cairo/1
+# text = Qiz doʻstiga xat yozdi.
+1	Qiz	qiz	NOUN	_	Case=Nom|Number=Sing	4	nsubj	_	_
+2	doʻstiga	doʻst	NOUN	_	Case=Dat|Number=Sing	4	obl	_	_
+3	xat	xat	NOUN	_	Case=Nom|Number=Sing	4	obj	_	_
+4	yozdi	yoz	VERB	_	Mood=Ind|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	_	_	4	punct	_	_
+
+# sent_id = cairo-2
+# parallel_id = cairo/2
+# text = Menimcha, yomgʻir yogʻyapti.
+1	Menimcha	menimcha	ADV	_	_	4	discourse	_	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	_	_
+3	yomgʻir	yomgʻir	NOUN	_	Case=Nom|Number=Sing	4	nsubj	_	_
+4	yogʻyapti	yogʻ	VERB	_	Aspect=Prog|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	_	_	4	punct	_	_
+
+# sent_id = cairo-3.1
+# parallel_id = cairo/3/alt1
+# text = U chekish va ichishni tashlashga harakat qildi.
+1	U	u	PRON	_	Case=Nom|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	_
+2	chekish	chek	VERB	_	Case=Nom|VerbForm=Vnoun	5	xcomp	_	_
+3	va	va	CCONJ	_	_	4	cc	_	_
+4	ichishni	ich	VERB	_	Case=Acc|VerbForm=Vnoun	2	conj	_	_
+5	tashlashga	tashla	VERB	_	Case=Dat|VerbForm=Vnoun	6	xcomp	_	_
+6	harakat	harakat	NOUN	_	Case=Nom|Number=Sing	7	compound:lvc	_	_
+7	qildi	qil	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+8	.	.	PUNCT	_	_	7	punct	_	_
+
+# sent_id = cairo-3.2
+# parallel_id = cairo/3/alt2
+# text = Chekish va ichishni tashlashga harakat qildi.
+1	Chekish	chek	VERB	_	Case=Nom|VerbForm=Vnoun	4	xcomp	_	_
+2	va	va	CCONJ	_	_	3	cc	_	_
+3	ichishni	ich	VERB	_	Case=Acc|VerbForm=Vnoun	1	conj	_	_
+4	tashlashga	tashla	VERB	_	Case=Dat|VerbForm=Vnoun	5	xcomp	_	_
+5	harakat	harakat	NOUN	_	Case=Nom|Number=Sing	6	compound:lvc	_	_
+6	qildi	qil	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+7	.	.	PUNCT	_	_	6	punct	_	_
+
+# sent_id = cairo-4.1
+# parallel_id = cairo/4/alt1
+# text = Sen ketishni istaysanmi?
+1	Sen	sen	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	3	nsubj	_	_
+2	ketishni	ket	VERB	_	Case=Acc|VerbForm=Vnoun	3	xcomp	_	_
+3	istaysanmi	ista	VERB	_	Mood=Int|Number=Sing|Person=2|Tense=Pres	0	root	_	SpaceAfter=No
+4	?	?	PUNCT	_	_	3	punct	_	_
+
+# sent_id = cairo-4.2
+# parallel_id = cairo/4/alt2
+# text = Ketishni istaysanmi?
+1	Ketishni	ket	VERB	_	Case=Acc|VerbForm=Vnoun	2	xcomp	_	_
+2	istaysanmi	ista	VERB	_	Mood=Int|Number=Sing|Person=2|Tense=Pres	0	root	_	SpaceAfter=No
+3	?	?	PUNCT	_	_	2	punct	_	_
+
+# sent_id = cairo-5
+# parallel_id = cairo/5
+# text = Sem, derazani och!
+1	Sem	Sem	PROPN	_	Case=Nom|Number=Sing	4	vocative	_	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	_	_
+3	derazani	deraza	NOUN	_	Case=Acc|Number=Sing	4	obj	_	_
+4	och	och	VERB	_	Mood=Imp|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+5	!	!	PUNCT	_	_	4	punct	_	_
+
+# sent_id = cairo-6.1
+# parallel_id = cairo/6/alt1
+# text = U eriga mashinani yuvdirdi.
+1	U	u	PRON	_	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
+2	eriga	er	NOUN	_	Case=Dat|Number=Sing	4	obl	_	_
+3	mashinani	mashina	NOUN	_	Case=Acc|Number=Sing	4	obj	_	_
+4	yuvdirdi	yuv	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|Voice=Cau	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	_	_	4	punct	_	_
+
+# sent_id = cairo-6.2
+# parallel_id = cairo/6/alt2
+# text = Eriga mashinani yuvdirdi.
+1	Eriga	er	NOUN	_	Case=Dat|Number=Sing	3	obl	_	_
+2	mashinani	mashina	NOUN	_	Case=Acc|Number=Sing	3	obj	_	_
+3	yuvdirdi	yuv	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|Voice=Cau	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	_	_	3	punct	_	_
+
+# sent_id = cairo-7
+# parallel_id = cairo/7
+# text = Piterning qoʻshnisi panjarani qizilga boʻyadi.
+1	Piterning	Piter	PROPN	_	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	qoʻshnisi	qoʻshni	NOUN	_	Case=Nom|Number=Sing|Poss=Yes	5	nsubj	_	_
+3	panjarani	panjara	NOUN	_	Case=Acc|Number=Sing	5	obj	_	_
+4	qizilga	qizil	NOUN	_	Case=Dat	5	obl	_	_
+5	boʻyadi	boʻya	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	_	_	5	punct	_	_
+
+# sent_id = cairo-8
+# parallel_id = cairo/8
+# text = Mening dadam senikidan zoʻrroq.
+1	Mening	men	PRON	_	Case=Gen|Number=Sing|PronType=Prs	2	nmod:poss	_	_
+2	dadam	dada	NOUN	_	Case=Nom|Number=Sing|Poss=Yes	4	nsubj	_	_
+3	senikidan	sen	PRON	_	Case=Abl|Number=Sing|Person=2|Poss=Yes|PronType=Prs	4	obl	_	_
+4	zoʻrroq	zoʻr	ADJ	_	Degree=Cmp	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	_	_	4	punct	_	_
+
+# sent_id = cairo-9
+# parallel_id = cairo/9
+# text = Meri bronza, Piter kumush, Jeyn oltin medalni qoʻlga kiritdi.
+1	Meri	Meri	PROPN	_	Case=Nom|Number=Sing	11	nsubj	_	_
+2	bronza	bronza	NOUN	_	Case=Nom|Number=Sing	9	amod	_	SpaceAfter=No
+3	,	,	PUNCT	_	_	4	punct	_	_
+4	Piter	Piter	PROPN	_	Case=Nom|Number=Sing	1	conj	_	_
+5	kumush	kumush	NOUN	_	Case=Nom|Number=Sing	2	conj	_	SpaceAfter=No
+6	,	,	PUNCT	_	_	7	punct	_	_
+7	Jeyn	Jeyn	PROPN	_	Case=Nom|Number=Sing	1	conj	_	_
+8	oltin	oltin	NOUN	_	Case=Nom|Number=Sing	2	conj	_	_
+9	medalni	medal	NOUN	_	Case=Acc|Number=Sing	11	obj	_	_
+10	qoʻlga	qoʻl	NOUN	_	Case=Dat|Number=Sing	11	compound:lvc	_	_
+11	kiritdi	kir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past	0	root	_	SpaceAfter=No
+12	.	.	PUNCT	_	_	11	punct	_	_
+
+# sent_id = cairo-10
+# parallel_id = cairo/10
+# text = Iguazu katta mamlakatmi yoki kichik?
+1	Iguazu	Iguazu	PROPN	_	Case=Nom|Number=Sing	3	nsubj	_	_
+2	katta	katta	ADJ	_	_	3	amod	_	_
+3	mamlakatmi	mamlakat	NOUN	_	Case=Nom|Number=Sing	0	root	_	_
+4	yoki	yoki	CCONJ	_	_	5	cc	_	_
+5	kichik	kichik	ADJ	_	_	2	conj	_	SpaceAfter=No
+6	?	?	PUNCT	_	_	3	punct	_	_
+
+# sent_id = cairo-11
+# parallel_id = cairo/11
+# text = Piter Smit ham, Meri Braun ham saylana olmaydi.
+1	Piter	Piter	PROPN	_	Case=Nom|Number=Sing	9	nsubj	_	_
+2	Smit	Smit	PROPN	_	Case=Nom|Number=Sing	1	flat	_	_
+3	ham	ham	CCONJ	_	_	1	cc	_	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	_	_
+5	Meri	Meri	PROPN	_	Case=Nom|Number=Sing	1	conj	_	_
+6	Braun	Braun	PROPN	_	Case=Nom|Number=Sing	5	flat	_	_
+7	ham	ham	CCONJ	_	_	5	cc	_	_
+8	saylana	sayla	VERB	_	VerbForm=Conv	9	compound	_	_
+9	olmaydi	ol	VERB	_	Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Pres	0	root	_	SpaceAfter=No
+10	.	.	PUNCT	_	_	9	punct	_	_
+
+# sent_id = cairo-12.1
+# parallel_id = cairo/12/alt1
+# text = Ular kim yozganini bilmaydi.
+1	Ular	u	PRON	_	Case=Nom|Number=Plur|Person=3|PronType=Prs	4	nsubj	_	_
+2	kim	kim	PRON	_	Case=Nom|Number=Sing|PronType=Int	3	nsubj	_	_
+3	yozganini	yoz	VERB	_	Case=Acc|VerbForm=Part	4	ccomp	_	_
+4	bilmaydi	bil	VERB	_	Mood=Ind|Number=Plur|Person=3|Polarity=Neg|Tense=Past	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	_	_	4	punct	_	_
+
+# sent_id = cairo-12.2
+# parallel_id = cairo/12/alt2
+# text = Kim yozganini bilmaydi.
+1	Kim	kim	PRON	_	Case=Nom|Number=Sing|PronType=Int	2	nsubj	_	_
+2	yozganini	yoz	VERB	_	Case=Acc|VerbForm=Part	3	ccomp	_	_
+3	bilmaydi	bil	VERB	_	Mood=Ind|Number=Plur|Person=3|Polarity=Neg|Tense=Past	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	_	_	3	punct	_	_
+
+# sent_id = cairo-13.1
+# parallel_id = cairo/13/alt1
+# text = Sen nimaga qarayapsan?
+1	Sen	sen	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	3	nsubj	_	_
+2	nimaga	nima	PRON	_	Case=Dat|Number=Sing|PronType=Int	3	obl	_	_
+3	qarayapsan	qara	VERB	_	Aspect=Prog|Mood=Ind|Number=Sing|Person=2|Tense=Pres	0	root	_	SpaceAfter=No
+4	?	?	PUNCT	_	_	3	punct	_	_
+
+# sent_id = cairo-13.2
+# parallel_id = cairo/13/alt2
+# text = Nimaga qarayapsan?
+1	Nimaga	nima	PRON	_	Case=Dat|Number=Sing|PronType=Int	2	obl	_	_
+2	qarayapsan	qara	VERB	_	Aspect=Prog|Mood=Ind|Number=Sing|Person=2|Tense=Pres	0	root	_	SpaceAfter=No
+3	?	?	PUNCT	_	_	2	punct	_	_
+
+# sent_id = cairo-14.1
+# parallel_id = cairo/14/alt1
+# text = Sen qachon kelishing mumkin deb oʻylaysan?
+1	Sen	sen	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	6	nsubj	_	_
+2	qachon	qachon	ADV	_	PronType=Int	3	advmod	_	_
+3	kelishing	kel	VERB	_	VerbForm=Vnoun	6	xcomp	_	_
+4	mumkin	mumkin	AUX	_	_	3	aux	_	_
+5	deb	de	VERB	_	_	3	mark	_	_
+6	oʻylaysan	oʻyla	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+7	?	?	PUNCT	_	_	6	punct	_	_
+
+# sent_id = cairo-14.2
+# parallel_id = cairo/14/alt2
+# text = Qachon kelishing mumkin deb oʻylaysan?
+1	Qachon	qachon	ADV	_	PronType=Int	2	advmod	_	_
+2	kelishing	kel	VERB	_	VerbForm=Vnoun	5	xcomp	_	_
+3	mumkin	mumkin	AUX	_	_	2	aux	_	_
+4	deb	de	VERB	_	_	2	mark	_	_
+5	oʻylaysan	oʻyla	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+6	?	?	PUNCT	_	_	5	punct	_	_
+
+# sent_id = cairo-15.1
+# parallel_id = cairo/15/alt1
+# text = U mashina oldi, lekin ukasi faqat velosiped oldi.
+1	U	u	PRON	_	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+2	mashina	mashina	NOUN	_	Case=Nom|Number=Sing	3	obj	_	_
+3	oldi	ol	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	_	_	5	punct	_	_
+5	lekin	lekin	CCONJ	_	_	9	cc	_	_
+6	ukasi	uka	NOUN	_	Case=Nom|Number=Sing|Poss=Yes	9	nsubj	_	_
+7	faqat	faqat	ADV	_	_	9	advmod	_	_
+8	velosiped	velosiped	NOUN	_	Case=Nom|Number=Sing	9	obj	_	_
+9	oldi	ol	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past	3	parataxis	_	SpaceAfter=No
+10	.	.	PUNCT	_	_	3	punct	_	_
+
+# sent_id = cairo-15.2
+# parallel_id = cairo/15/alt2
+# text = Mashina oldi, lekin ukasi faqat velosiped oldi.
+1	Mashina	mashina	NOUN	_	Case=Nom|Number=Sing	2	obj	_	_
+2	oldi	ol	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	_	_	4	punct	_	_
+4	lekin	lekin	CCONJ	_	_	8	cc	_	_
+5	ukasi	uka	NOUN	_	Case=Nom|Number=Sing|Poss=Yes	8	nsubj	_	_
+6	faqat	faqat	ADV	_	_	8	advmod	_	_
+7	velosiped	velosiped	NOUN	_	Case=Nom|Number=Sing	8	obj	_	_
+8	oldi	ol	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past	2	parataxis	_	SpaceAfter=No
+9	.	.	PUNCT	_	_	2	punct	_	_
+
+# sent_id = cairo-16
+# parallel_id = cairo/16
+# text = Piter va Meri bir-birlarini quchoqladilar va shundan soʻng xonadan chiqdilar.
+1	Piter	Piter	PROPN	_	Case=Nom|Number=Sing	5	nsubj	_	_
+2	va	va	CCONJ	_	_	3	cc	_	_
+3	Meri	Meri	PROPN	_	Case=Nom|Number=Sing	1	conj	_	_
+4	bir-birlarini	bir-biri	PRON	_	Case=Acc|Number=Plur	5	obj	_	_
+5	quchoqladilar	quchoqla	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past	0	root	_	_
+6	va	va	CCONJ	_	_	10	cc	_	_
+7	shundan	shu	PRON	_	Case=Abl|Number=Sing|Person=3|PronType=Dem	10	obl	_	_
+8	soʻng	soʻng	ADV	_	_	7	case	_	_
+9	xonadan	xona	NOUN	_	Case=Abl|Number=Sing	10	obl	_	_
+10	chiqdilar	chiq	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past	5	conj	_	SpaceAfter=No
+11	.	.	PUNCT	_	_	5	punct	_	_
+
+# sent_id = cairo-17.1
+# parallel_id = cairo/17/alt1
+# text = U sochini turmaklashi kerak edi, lekin negadir oʻsha kuni turmaklamadi.
+1	U	u	PRON	_	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+2	sochini	soch	NOUN	_	Case=Acc|Number=Sing	3	obj	_	_
+3	turmaklashi	turmakla	VERB	_	Number=Sing|Person=3|VerbForm=Vnoun	0	root	_	_
+4	kerak	kerak	AUX	_	_	3	aux	_	_
+5	edi	edi	AUX	_	Tense=Past	3	cop	_	SpaceAfter=No
+6	,	,	PUNCT	_	_	7	punct	_	_
+7	lekin	lekin	CCONJ	_	_	11	cc	_	_
+8	negadir	negadir	ADV	_	_	11	advmod	_	_
+9	oʻsha	oʻsha	DET	_	PronType=Dem	10	det	_	_
+10	kuni	kun	NOUN	_	Case=Nom|Number=Sing	11	obl	_	_
+11	turmaklamadi	turmakla	VERB	_	Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past	3	conj	_	SpaceAfter=No
+12	.	.	PUNCT	_	_	3	punct	_	_
+
+# sent_id = cairo-17.2
+# parallel_id = cairo/17/alt2
+# text = Sochini turmaklashi kerak edi, lekin negadir oʻsha kuni turmaklamadi.
+1	Sochini	soch	NOUN	_	Case=Acc|Number=Sing	2	obj	_	_
+2	turmaklashi	turmakla	VERB	_	Number=Sing|Person=3|VerbForm=Vnoun	0	root	_	_
+3	kerak	kerak	AUX	_	_	2	aux	_	_
+4	edi	edi	AUX	_	Tense=Past	2	cop	_	SpaceAfter=No
+5	,	,	PUNCT	_	_	6	punct	_	_
+6	lekin	lekin	CCONJ	_	_	10	cc	_	_
+7	negadir	negadir	ADV	_	_	10	advmod	_	_
+8	oʻsha	oʻsha	DET	_	PronType=Dem	9	det	_	_
+9	kuni	kun	NOUN	_	Case=Nom|Number=Sing	10	obl	_	_
+10	turmaklamadi	turmakla	VERB	_	Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past	2	conj	_	SpaceAfter=No
+11	.	.	PUNCT	_	_	2	punct	_	_
+
+# sent_id = cairo-18
+# parallel_id = cairo/18
+# text = U juda tez yugurgani uchun yeta olmadim.
+1	U	u	PRON	_	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
+2	juda	juda	ADV	_	_	3	advmod	_	_
+3	tez	tez	ADV	_	_	4	advmod	_	_
+4	yugurgani	yugur	VERB	_	Number=Sing|Person=3|VerbForm=Part	7	advcl	_	_
+5	uchun	uchun	ADP	_	_	4	case	_	_
+6	yeta	yet	VERB	_	VerbForm=Conv	7	compound	_	_
+7	olmadim	ol	VERB	_	Mood=Ind|Number=Sing|Person=1|Polarity=Neg|Tense=Past	0	root	_	SpaceAfter=No
+8	.	.	PUNCT	_	_	7	punct	_	_
+
+# sent_id = cairo-19
+# parallel_id = cairo/19
+# text = Bu xat Piterdan va u kecha keldi.
+1	Bu	bu	DET	_	PronType=Dem	2	det	_	_
+2	xat	xat	NOUN	_	Case=Nom|Number=Sing	3	nsubj	_	_
+3	Piterdan	Piter	NOUN	_	Case=Abl|Number=Sing	0	root	_	_
+4	va	va	CCONJ	_	_	7	cc	_	_
+5	u	u	PRON	_	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	conj	_	_
+6	kecha	kecha	ADV	_	_	7	advmod	_	_
+7	keldi	kel	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past	3	conj	_	SpaceAfter=No
+8	.	.	PUNCT	_	_	3	punct	_	_
+
+# sent_id = cairo-20.1
+# parallel_id = cairo/20/alt1
+# text = U Fransiya poytaxti Parijda oʻsgan.
+1	U	u	PRON	_	Case=Nom|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_
+2	Fransiya	Fransiya	PROPN	_	Case=Nom|Number=Sing	3	nmod	_	_
+3	poytaxti	poytaxt	NOUN	_	Case=Nom|Number=Sing|Poss=Yes	4	nmod	_	_
+4	Parijda	Parij	PROPN	_	Case=Loc|Number=Sing	5	obl	_	_
+5	oʻsgan	oʻs	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	_	_	5	punct	_	_
+
+# sent_id = cairo-20.2
+# parallel_id = cairo/20/alt2
+# text = Fransiya poytaxti Parijda oʻsgan.
+1	Fransiya	Fransiya	PROPN	_	Case=Nom|Number=Sing	2	nmod	_	_
+2	poytaxti	poytaxt	NOUN	_	Case=Nom|Number=Sing|Poss=Yes	3	nmod	_	_
+3	Parijda	Parij	PROPN	_	Case=Loc|Number=Sing	4	obl	_	_
+4	oʻsgan	oʻs	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	_	_	4	punct	_	_
+
+# sent_id = udtw23-1
+# parallel_id = tuecl/udtw23-1
+# text = Erim chorbogʻdagi bolalar xonasini apil-tapil yigʻishtirib, oshxonadagi stolni ham chiqarib tashlabdi.
+1	Erim	er	NOUN	_	Case=Nom|Number=Sing|Poss=Yes	8	nsubj	_	_
+2	chorbogʻdagi	chorbogʻ	NOUN	_	Case=Loc|Number=Sing	4	nmod	_	_
+3	bolalar	bola	NOUN	_	Case=Nom|Number=Plur	4	nmod	_	_
+4	xonasini	xona	NOUN	_	Case=Acc|Number=Sing	8	obj	_	_
+5	apil	apil	PART	_	_	7	compound:redup	_	SpaceAfter=No
+6	-	-	PUNCT	_	_	5	punct	_	SpaceAfter=No
+7	tapil	tapil	PART	_	_	8	advmod	_	_
+8	yigʻishtirib	yigʻishtir	VERB	_	_	0	root	_	SpaceAfter=No
+9	,	,	PUNCT	_	_	14	punct	_	_
+10	oshxonadagi	oshxona	NOUN	_	Case=Loc|Number=Sing	11	obl	_	_
+11	stolni	stol	NOUN	_	Case=Acc|Number=Sing	14	obj	_	_
+12	ham	ham	ADV	_	_	14	advmod	_	_
+13	chiqarib	chiq	VERB	_	VerbForm=Conv	14	compound:svc	_	_
+14	tashlabdi	tashla	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past	8	conj	_	SpaceAfter=No
+15	.	.	PUNCT	_	_	8	punct	_	_
+
+# sent_id = udtw23-2
+# parallel_id = tuecl/udtw23-2
+# text = Senga doim shuni aytaman, ertalab doʻsting bilan telefonda gaplashayotganingda men haqimda gapirma.
+1	Senga	sen	PRON	_	Case=Dat|Number=Sing|Person=2|PronType=Prs	4	obl	_	_
+2	doim	doim	ADV	_	_	4	advmod	_	_
+3	shuni	shu	PRON	_	Case=Acc|Number=Sing|PronType=Dem	4	obj	_	_
+4	aytaman	ayt	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	_	_	13	punct	_	_
+6	ertalab	ertalab	ADV	_	_	10	advmod	_	_
+7	doʻsting	doʻst	NOUN	_	Case=Nom|Number=Sing|Poss=Yes	10	obl	_	_
+8	bilan	bilan	ADP	_	_	7	case	_	_
+9	telefonda	telefon	NOUN	_	Case=Loc|Number=Sing	10	obl	_	_
+10	gaplashayotganingda	gaplash	VERB	_	Aspect=Prog|Case=Loc|Mood=Ind|Number=Sing|Person=2	13	advcl	_	_
+11	men	men	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	13	obl	_	_
+12	haqimda	haqida	ADP	_	_	11	case	_	_
+13	gapirma	gapir	VERB	_	Mood=Imp|Number=Sing|Person=2|Polarity=Neg|Tense=Pres	4	parataxis	_	SpaceAfter=No
+14	.	.	PUNCT	_	_	4	punct	_	_
+
+# sent_id = udtw23-3
+# parallel_id = tuecl/udtw23-3
+# text = Yotgani kelgan mehmon eshikni taqillatdi, lekin uy egasi hali ham tozalash ishlari bilan band edi, restorandan buyurtma qilgan taomi esa hali kelmagan edi.
+1	Yotgani	yot	VERB	_	VerbForm=Vnoun	2	advcl	_	_
+2	kelgan	kel	VERB	_	VerbForm=Part	3	acl	_	_
+3	mehmon	mehmon	NOUN	_	Case=Nom|Number=Sing	5	nsubj	_	_
+4	eshikni	eshik	NOUN	_	Case=Acc|Number=Sing	5	obj	_	_
+5	taqillatdi	taqillat	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	_	_	7	punct	_	_
+7	lekin	lekin	CCONJ	_	_	15	cc	_	_
+8	uy	uy	NOUN	_	Case=Nom|Number=Sing	9	nmod	_	_
+9	egasi	ega	NOUN	_	Case=Nom|Number=Sing|Poss=Yes	15	nsubj	_	_
+10	hali	hali	ADV	_	_	15	advmod	_	_
+11	ham	ham	ADV	_	_	10	compound	_	_
+12	tozalash	tozala	VERB	_	VerbForm=Vnoun	13	nmod	_	_
+13	ishlari	ish	NOUN	_	Case=Nom|Number=Plur	15	obl	_	_
+14	bilan	bilan	ADV	_	_	13	case	_	_
+15	band	band	ADJ	_	_	5	conj	_	_
+16	edi	edi	AUX	_	_	15	cop	_	SpaceAfter=No
+17	,	,	PUNCT	_	_	24	punct	_	_
+18	restorandan	restoran	NOUN	_	Case=Abl|Number=Sing	20	obl	_	_
+19	buyurtma	buyurtma	NOUN	_	Case=Nom|Number=Sing	20	compound	_	_
+20	qilgan	qil	VERB	_	VerbForm=Part	21	acl	_	_
+21	taomi	taom	NOUN	_	Case=Nom|Number=Sing	24	nsubj	_	_
+22	esa	esa	CCONJ	_	_	24	cc	_	_
+23	hali	hali	ADV	_	_	24	advmod	_	_
+24	kelmagan	kel	VERB	_	Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past|VerbForm=Fin	5	conj	_	_
+25	edi	edi	AUX	_	Tense=Past	24	cop	_	SpaceAfter=No
+26	.	.	PUNCT	_	_	5	punct	_	_
+
+# sent_id = udtw23-4
+# parallel_id = tuecl/udtw23-4
+# text = Oysha - shifokor.
+1	Oysha	Oysha	PROPN	_	Case=Nom|Number=Sing	3	nsubj	_	_
+2	-	-	PUNCT	_	_	1	punct	_	_
+3	shifokor	shifokor	NOUN	_	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	_	_	3	punct	_	_
+
+# sent_id = udtw23-5
+# parallel_id = tuecl/udtw23-5
+# text = Biz hal qilmoqchi boʻlayotgan muammo shuki, kutubxonada hatto beshta kitobga ham joy yoʻq.
+1	Biz	biz	PRON	_	Case=Nom|Number=Plur|Person=1|PronType=Prs	3	nsubj	_	_
+2	hal	hal	PART	_	_	3	compound:lvc	_	_
+3	qilmoqchi	qil	VERB	_	_	5	acl	_	_
+4	boʻlayotgan	boʻl	AUX	_	_	3	aux	_	_
+5	muammo	muammo	NOUN	_	Case=Nom|Number=Sing	6	nsubj	_	_
+6	shuki	shu	PRON	_	PronType=Dem	0	root	_	SpaceAfter=No
+7	,	,	PUNCT	_	_	6	punct	_	_
+8	kutubxonada	kutubxona	NOUN	_	Case=Loc|Number=Sing	14	obl	_	_
+9	hatto	hatto	ADV	_	_	11	advmod	_	_
+10	beshta	besh	NUM	_	NumType=Card	11	nummod	_	_
+11	kitobga	kitob	NOUN	_	Case=Dat|Number=Sing	14	obl	_	_
+12	ham	ham	ADV	_	_	14	advmod	_	_
+13	joy	joy	NOUN	_	Case=Nom|Number=Sing	14	nsubj	_	_
+14	yoʻq	yoʻq	ADJ	_	_	6	parataxis	_	SpaceAfter=No
+15	.	.	PUNCT	_	_	14	punct	_	_
+
+# sent_id = udtw23-6
+# parallel_id = tuecl/udtw23-6
+# text = Uning buvisi hamshira edi.
+1	Uning	u	PRON	_	Case=Gen|Number=Sing|Person=3|PronType=Prs	2	nmod:poss	_	_
+2	buvisi	buvi	NOUN	_	Case=Nom|Number=Sing|Poss=Yes	3	nsubj	_	_
+3	hamshira	hamshira	NOUN	_	Case=Nom|Number=Sing	0	root	_	_
+4	edi	edi	AUX	_	Tense=Past	3	cop	_	SpaceAfter=No
+5	.	.	PUNCT	_	_	3	punct	_	_
+
+# sent_id = udtw23-7
+# parallel_id = tuecl/udtw23-7
+# text = Xoʻsh, javondagilar qayerda edi?
+1	Xoʻsh	xoʻsh	INTJ	_	_	4	discourse	_	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	_	_
+3	javondagilar	javon	NOUN	_	Case=Loc|Number=Plur	4	nsubj	_	_
+4	qayerda	qayer	PRON	_	Case=Loc|Number=Sing	0	root	_	_
+5	edi	edi	AUX	_	Tense=Past	4	cop	_	SpaceAfter=No
+6	?	?	PUNCT	_	_	4	punct	_	_
+
+# sent_id = udtw23-8
+# parallel_id = tuecl/udtw23-8
+# text = Sude uch soatdan beri idorada yoʻq emish, Oysha ham uyda emas ekan.
+1	Sude	Sude	PROPN	_	Case=Nom|Number=Sing	6	nsubj	_	_
+2	uch	uch	NUM	_	NumType=Card	3	nummod	_	_
+3	soatdan	saot	NOUN	_	Case=Abl|Number=Sing	6	obl	_	_
+4	beri	beri	ADP	_	_	3	case	_	_
+5	idorada	idora	NOUN	_	Case=Loc|Number=Sing	6	obl	_	_
+6	yoʻq	yoʻq	ADJ	_	_	0	root	_	_
+7	emish	emish	AUX	_	_	6	cop	_	SpaceAfter=No
+8	,	,	PUNCT	_	_	11	punct	_	_
+9	Oysha	Oysha	PROPN	_	Case=Nom|Number=Sing	11	nsubj	_	_
+10	ham	ham	CCONJ	_	_	9	cc	_	_
+11	uyda	uyda	NOUN	_	Case=Loc|Number=Sing	6	conj	_	_
+12	emas	emas	AUX	_	Polarity=Neg	11	cop	_	_
+13	ekan	ekan	AUX	_	_	11	cop	_	SpaceAfter=No
+14	.	.	PUNCT	_	_	6	punct	_	_
+
+# sent_id = udtw23-9
+# parallel_id = tuecl/udtw23-9
+# text = Bozorda meva bor, lekin chiroyli emas.
+1	Bozorda	bozor	NOUN	_	Case=Loc|Number=Sing	3	obl	_	_
+2	meva	meva	NOUN	_	Case=Nom|Number=Sing	3	nsubj	_	_
+3	bor	bor	ADJ	_	_	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	_	_	5	punct	_	_
+5	lekin	lekin	CCONJ	_	_	6	cc	_	_
+6	chiroyli	chiroyli	ADJ	_	_	3	conj	_	_
+7	emas	emas	AUX	_	_	6	cop	_	SpaceAfter=No
+8	.	.	PUNCT	_	_	3	punct	_	_
+
+# sent_id = udtw23-10
+# parallel_id = tuecl/udtw23-10
+# text = Deniz shifokor boʻladi, bilib qoʻy!
+1	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	3	nsubj	_	_
+2	shifokor	shifokor	NOUN	_	Case=Nom|Number=Sing	3	xcomp	_	_
+3	boʻladi	boʻl	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	_	_	6	punct	_	_
+5	bilib	bil	VERB	_	VerbForm=Conv	6	compound	_	_
+6	qoʻy	qoʻy	VERB	_	Mood=Imp|Number=Sing|Person=2	3	parataxis	_	SpaceAfter=No
+7	!	!	PUNCT	_	_	6	punct	_	_
+
+# sent_id = udtw23-11
+# parallel_id = tuecl/udtw23-11
+# text = Deniz uyquda edi.
+1	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	2	nsubj	_	_
+2	uyquda	uyqu	NOUN	_	Case=Loc|Number=Sing	0	root	_	_
+3	edi	edi	AUX	_	Tense=Past	2	cop	_	SpaceAfter=No
+4	.	.	PUNCT	_	_	2	punct	_	_
+
+# sent_id = udtw23-12
+# parallel_id = tuecl/udtw23-12
+# text = Yigʻilish eʼlon qilinayotganda juda hayron boʻlgan boʻlsa kerak, menga tikilib qoldi.
+1	Yigʻilish	yigʻilish	NOUN	_	Case=Nom|Number=Sing	3	nsubj:pass	_	_
+2	eʼlon	eʼlon	NOUN	_	Case=Nom|Number=Sing	3	compound:lvc	_	_
+3	qilinayotganda	qil	VERB	_	Aspect=Prog|Case=Loc|Mood=Ind|Number=Sing|Person=3|Tense=Past|Voice=Pass	6	advcl	_	_
+4	juda	juda	ADV	_	_	6	advmod	_	_
+5	hayron	hayron	ADJ	_	_	6	compound:lvc	_	_
+6	boʻlgan	boʻl	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
+7	boʻlsa	boʻl	AUX	_	_	6	aux	_	_
+8	kerak	kerak	AUX	_	_	6	aux	_	SpaceAfter=No
+9	,	,	PUNCT	_	_	12	punct	_	_
+10	menga	men	PRON	_	Case=Dat|Number=Sing	12	obl	_	_
+11	tikilib	tikil	VERB	_	VerbForm=Conv	12	compound	_	_
+12	qoldi	qol	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	6	parataxis	_	SpaceAfter=No
+13	.	.	PUNCT	_	_	6	punct	_	_
+
+# sent_id = udtw23-13
+# parallel_id = tuecl/udtw23-13
+# text = Kardiganim uyda ekanmi?
+1	Kardiganim	kardigan	NOUN	_	Case=Nom|Number=Sing|Poss=Yes	2	nsubj	_	_
+2	uyda	uy	NOUN	_	Case=Loc|Number=Sing	0	root	_	_
+3	ekanmi	ekan	AUX	_	Mood=Int|Number=Sing|Person=3|Tense=Past	2	cop	_	SpaceAfter=No
+4	?	?	PUNCT	_	_	2	punct	_	_
+
+# sent_id = udtw23-14
+# parallel_id = tuecl/udtw23-14
+# text = Tadbir bugun boʻladimi?
+1	Tadbir	tadbir	NOUN	_	Case=Nom|Number=Sing	3	nsubj	_	_
+2	bugun	bugun	ADV	_	_	3	advmod	_	_
+3	boʻladimi	boʻl	VERB	_	Mood=Int|Number=Sing|Person=3|Tense=Fut	0	root	_	SpaceAfter=No
+4	?	?	PUNCT	_	_	3	punct	_	_
+
+# sent_id = udtw23-15
+# parallel_id = tuecl/udtw23-15
+# text = Natijalar eʼlon qilingan, shunday emasmi?
+1	Natijalar	natija	NOUN	_	Case=Nom|Number=Plur	3	nsubj:pass	_	_
+2	eʼlon	eʼlon	NOUN	_	Case=Nom|Number=Sing	3	compound:lvc	_	_
+3	qilingan	qil	VERB	_	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	_	_
+5	shunday	shunday	PRON	_	PronType=Dem	3	discourse	_	_
+6	emasmi	emas	AUX	_	Mood=Int|Polarity=Neg	5	cop	_	SpaceAfter=No
+7	?	?	PUNCT	_	_	6	punct	_	_
+
+# sent_id = udtw23-16
+# parallel_id = tuecl/udtw23-16
+# text = Oysha bu kitobni oʻqimagan emas.
+1	Oysha	Oysha	PROPN	_	Case=Nom|Number=Sing	4	nsubj	_	_
+2	bu	bu	DET	_	PronType=Dem	3	det	_	_
+3	kitobni	kitob	NOUN	_	Case=Acc|Number=Sing	4	obj	_	_
+4	oʻqimagan	oʻqi	VERB	_	Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past|VerbForm=Fin	0	root	_	_
+5	emas	emas	AUX	_	Polarity=Neg	4	cop	_	SpaceAfter=No
+6	.	.	PUNCT	_	_	4	punct	_	_
+
+# sent_id = udtw23-17
+# parallel_id = tuecl/udtw23-17
+# text = Umuman olganda, oʻqishni emas, rasm chizishni yaxshi koʻradi.
+1	Umuman	umuman	ADV	_	_	10	advmod	_	_
+2	olganda	ol	VERB	_	_	1	compound	_	SpaceAfter=No
+3	,	,	PUNCT	_	_	1	punct	_	_
+4	oʻqishni	oʻqi	VERB	_	Case=Acc|VerbForm=Vnoun	10	xcomp	_	_
+5	emas	emas	AUX	_	Polarity=Neg	4	cop	_	SpaceAfter=No
+6	,	,	PUNCT	_	_	4	punct	_	_
+7	rasm	rasm	NOUN	_	Case=Nom|Number=Sing	8	obj	_	_
+8	chizishni	chiz	VERB	_	Case=Acc|VerbForm=Vnoun	4	conj	_	_
+9	yaxshi	yaxshi	ADJ	_	_	10	compound:lvc	_	_
+10	koʻradi	koʻr	VERB	_	_	0	root	_	SpaceAfter=No
+11	.	.	PUNCT	_	_	10	punct	_	_
+
+# sent_id = udtw23-18
+# parallel_id = tuecl/udtw23-18
+# text = Nimani oʻqiganini emas, nimani oʻqimoqchiligini aytyapti.
+1	Nimani	nima	PRON	_	Case=Acc|Number=Sing	2	obj	_	_
+2	oʻqiganini	oʻqi	VERB	_	Case=Acc|Number=Sing|Person=3|VerbForm=Part	7	xcomp	_	_
+3	emas	emas	AUX	_	Polarity=Neg	2	cop	_	SpaceAfter=No
+4	,	,	PUNCT	_	_	2	punct	_	_
+5	nimani	nima	PRON	_	Case=Acc|Number=Sing	6	obj	_	_
+6	oʻqimoqchiligini	oʻqi	VERB	_	Case=Acc|Number=Sing|Person=3|Tense=Fut|VerbForm=Vnoun	2	conj	_	_
+7	aytyapti	ayt	VERB	_	_	0	root	_	SpaceAfter=No
+8	.	.	PUNCT	_	_	7	punct	_	_
+
+# sent_id = udtw23-19
+# parallel_id = tuecl/udtw23-19
+# text = Buning koʻki chiroyliroq, menga koʻkini bera olasanmi?
+1	Buning	bu	PRON	_	Case=Gen|Number=Sing|PronType=Dem	2	nmod:poss	_	_
+2	koʻki	koʻk	ADJ	_	_	3	nsubj	_	_
+3	chiroyliroq	chiroyli	ADJ	_	Degree=Cmp	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	_	_
+5	menga	men	PRON	_	Case=Dat|Number=Sing	8	obl	_	_
+6	koʻkini	koʻk	NOUN	_	Case=Acc|Number=Sing|Poss=Yes	8	obj	_	_
+7	bera	ber	VERB	_	VerbForm=Conv	8	compound	_	_
+8	olasanmi	ol	VERB	_	Mood=Int|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	parataxis	_	SpaceAfter=No
+9	?	?	PUNCT	_	_	8	punct	_	_
+
+# sent_id = udtw23-20
+# parallel_id = tuecl/udtw23-20
+# text = Biz yoshlarni erisha olmaydigan maqsadlardan voz kechtirishimiz kerak.
+1	Biz	biz	PRON	_	Case=Nom|Number=Plur|Person=1|PronType=Prs	7	nsubj	_	_
+2	yoshlarni	yosh	ADJ	_	Case=Acc|Number=Plur	7	obj	_	_
+3	erisha	erish	VERB	_	VerbForm=Conv	4	compound	_	_
+4	olmaydigan	ol	VERB	_	Polarity=Neg|VerbForm=Part	5	acl	_	_
+5	maqsadlardan	maqsad	NOUN	_	Case=Abl|Number=Plur	7	obl	_	_
+6	voz	voz	PART	_	_	7	compound:lvc	_	_
+7	kechtirishimiz	kech	VERB	_	Number=Plur|Person=1|VerbForm=Vnoun	0	root	_	_
+8	kerak	kerak	AUX	_	_	7	aux	_	SpaceAfter=No
+9	.	.	PUNCT	_	_	7	punct	_	_
+
+# sent_id = udtw23-21
+# parallel_id = tuecl/udtw23-21
+# text = Oʻqituvchi kitobni olib maktabga ketdi.
+1	Oʻqituvchi	oʻqituvchi	NOUN	_	Case=Nom|Number=Sing	5	nsubj	_	_
+2	kitobni	kitob	NOUN	_	Case=Acc|Number=Sing	3	obj	_	_
+3	olib	ol	VERB	_	VerbForm=Conv	5	advcl	_	_
+4	maktabga	maktab	NOUN	_	Case=Dat|Number=Sing	5	obl	_	_
+5	ketdi	ket	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	_	_	5	punct	_	_
+
+# sent_id = udtw23-22
+# parallel_id = tuecl/udtw23-22
+# text = Oʻqituvchi kitobni maktabga olib ketdi.
+1	Oʻqituvchi	oʻqituvchi	NOUN	_	Case=Nom|Number=Sing	5	nsubj	_	_
+2	kitobni	kitob	NOUN	_	Case=Acc|Number=Sing	5	obj	_	_
+3	maktabga	maktab	NOUN	_	Case=Dat|Number=Sing	5	obl	_	_
+4	olib	ol	VERB	_	VerbForm=Conv	5	compound:svc	_	_
+5	ketdi	ket	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	_	_	5	punct	_	_
+
+# sent_id = 1
+# parallel_id = tuecl/1
+# text = Deniz uxladi.
+1	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	2	nsubj	_	_
+2	uxladi	uxla	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	_	_	2	punct	_	_
+
+# sent_id = 2
+# parallel_id = tuecl/2
+# text = Deniz kitob oʻqiyapti.
+1	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	3	nsubj	_	_
+2	kitob	kitob	NOUN	_	Case=Nom|Number=Sing	3	obj	_	_
+3	oʻqiyapti	oʻqi	VERB	_	Aspect=Prog|Mood=Ind|Number=Sing|Person=3|Tense=Pres	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	_	_	3	punct	_	_
+
+# sent_id = 3
+# parallel_id = tuecl/3
+# text = Deniz oqshomlari uyda kitob oʻqiydi.
+1	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	5	nsubj	_	_
+2	oqshomlari	oqshom	NOUN	_	Case=Nom|Number=Plur	5	obl	_	_
+3	uyda	uy	NOUN	_	Case=Loc|Number=Sing	5	obl	_	_
+4	kitob	kitob	NOUN	_	Case=Nom|Number=Sing	5	obj	_	_
+5	oʻqiydi	oʻqi	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	_	_	5	punct	_	_
+
+# sent_id = 4
+# parallel_id = tuecl/4
+# text = Deniz ukasiga kitobni berdi.
+1	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	4	nsubj	_	_
+2	ukasiga	uka	NOUN	_	Case=Dat|Number=Sing	4	obl	_	_
+3	kitobni	kitob	NOUN	_	Case=Acc|Number=Sing	4	obj	_	_
+4	berdi	ber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	_	_	4	punct	_	_
+
+# sent_id = 5
+# parallel_id = tuecl/5
+# text = Deniz kitobni uyiga olib ketdi.
+1	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	5	nsubj	_	_
+2	kitobni	kitob	NOUN	_	Case=Acc|Number=Sing	5	obj	_	_
+3	uyiga	uy	NOUN	_	Case=Dat|Number=Sing	5	obl	_	_
+4	olib	ol	VERB	_	VerbForm=Conv	5	compound:svc	_	_
+5	ketdi	ket	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	_	_	5	punct	_	_
+
+# sent_id = 6
+# parallel_id = tuecl/6
+# text = Oʻqituvchi bolalarga dars berdi.
+1	Oʻqituvchi	oʻqituvchi	NOUN	_	Case=Nom|Number=Sing	4	nsubj	_	_
+2	bolalarga	bola	NOUN	_	Case=Dat|Number=Plur	4	obl	_	_
+3	dars	dars	NOUN	_	Case=Nom|Number=Sing	4	compound:lvc	_	_
+4	berdi	ber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	_	_	4	punct	_	_
+
+# sent_id = 7
+# parallel_id = tuecl/7
+# text = Deniz doʻstiga kitob sotib oldi.
+1	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	5	nsubj	_	_
+2	doʻstiga	doʻst	NOUN	_	Case=Dat|Number=Sing	5	obl	_	_
+3	kitob	kitob	NOUN	_	Case=Nom|Number=Sing	5	obj	_	_
+4	sotib	sot	VERB	_	VerbForm=Conv	5	compound:svc	_	_
+5	oldi	ol	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	_	_	5	punct	_	_
+
+# sent_id = 8
+# parallel_id = tuecl/8
+# text = Deniz akasi bilan yarashdi.
+1	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	4	nsubj	_	_
+2	akasi	aka	NOUN	_	Case=Nom|Number=Sing|Poss=Yes	4	obl	_	_
+3	bilan	bilan	ADP	_	_	2	case	_	_
+4	yarashdi	yarash	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	_	_	4	punct	_	_
+
+# sent_id = 9
+# parallel_id = tuecl/9
+# text = Deniz doʻstlaridan shikoyat qildi.
+1	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	4	nsubj	_	_
+2	doʻstlaridan	doʻst	NOUN	_	Case=Abl|Number=Plur|Poss=Yes	4	obl	_	_
+3	shikoyat	shikoyat	NOUN	_	Case=Nom|Number=Sing	4	compound:lvc	_	_
+4	qildi	qil	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	_	_	4	punct	_	_
+
+# sent_id = 10
+# parallel_id = tuecl/10
+# text = Deniz barvaqt uxladi.
+1	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	3	nsubj	_	_
+2	barvaqt	barvaqt	ADV	_	_	3	advmod	_	_
+3	uxladi	uxla	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	_	_	3	punct	_	_
+
+# sent_id = 11
+# parallel_id = tuecl/11
+# text = Deniz doʻsti tayyorlagan ovqatdan ikki likopcha yedi.
+1	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	7	nsubj	_	_
+2	doʻsti	doʻst	NOUN	_	Case=Nom|Number=Sing|Poss=Yes	3	nsubj	_	_
+3	tayyorlagan	tayyorla	VERB	_	VerbForm=Part	4	acl	_	_
+4	ovqatdan	ovqat	NOUN	_	Case=Abl|Number=Sing	6	obl	_	_
+5	ikki	ikki	NUM	_	NumType=Card	6	nummod	_	_
+6	likopcha	likopcha	NOUN	_	Case=Nom|Number=Sing	7	obj	_	_
+7	yedi	ye	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+8	.	.	PUNCT	_	_	7	punct	_	_
+
+# sent_id = 12
+# parallel_id = tuecl/12
+# text = Deniz uch soat uxladi.
+1	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	4	nsubj	_	_
+2	uch	uch	NUM	_	NumType=Card	3	nummod	_	_
+3	soat	soat	NOUN	_	Case=Nom|Number=Sing	4	obl	_	_
+4	uxladi	uxla	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	_	_	4	punct	_	_
+
+# sent_id = 13
+# parallel_id = tuecl/13
+# text = Deniz juda chaqqon.
+1	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	3	nsubj	_	_
+2	juda	juda	ADV	_	_	3	advmod	_	_
+3	chaqqon	chaqqon	ADJ	_	_	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	_	_	3	punct	_	_
+
+# sent_id = 14
+# parallel_id = tuecl/14
+# text = Deniz talaba.
+1	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	2	nsubj	_	_
+2	talaba	talaba	NOUN	_	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	_	_	2	punct	_	_
+
+# sent_id = 15
+# parallel_id = tuecl/15
+# text = Deniz talabadir.
+1	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	2	nsubj	_	_
+2	talabadir	talaba	NOUN	_	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	_	_	2	punct	_	_
+
+# sent_id = 16
+# parallel_id = tuecl/16
+# text = Deniz shifokor boʻladi.
+1	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	3	nsubj	_	_
+2	shifokor	shifokor	NOUN	_	Case=Nom|Number=Sing	3	xcomp	_	_
+3	boʻladi	boʻl	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	_	_	3	punct	_	_
+
+# sent_id = 17
+# parallel_id = tuecl/17
+# text = Deniz uyda.
+1	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	2	nsubj	_	_
+2	uyda	uy	NOUN	_	Case=Loc|Number=Sing	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	_	_	2	punct	_	_
+
+# sent_id = 18
+# parallel_id = tuecl/18
+# text = Deniz uyda edi.
+1	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	2	nsubj	_	_
+2	uyda	uy	NOUN	_	Case=Loc|Number=Sing	0	root	_	_
+3	edi	edi	AUX	_	Tense=Past	2	cop	_	SpaceAfter=No
+4	.	.	PUNCT	_	_	2	punct	_	_
+
+# sent_id = 19
+# parallel_id = tuecl/19
+# text = Deniz uyda boʻlgandi.
+1	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	2	nsubj	_	_
+2	uyda	uy	NOUN	_	Case=Loc|Number=Sing	0	root	_	_
+3	boʻlgandi	boʻl	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	2	aux	_	SpaceAfter=No
+4	.	.	PUNCT	_	_	2	punct	_	_
+
+# sent_id = 20
+# parallel_id = tuecl/20
+# text = Sovgʻa Deniz uchun edi.
+1	Sovgʻa	sovgʻa	NOUN	_	Case=Nom|Number=Sing	2	nsubj	_	_
+2	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	0	root	_	_
+3	uchun	uchun	ADP	_	_	2	case	_	_
+4	edi	edi	AUX	_	Tense=Past	2	cop	_	SpaceAfter=No
+5	.	.	PUNCT	_	_	2	punct	_	_
+
+# sent_id = 21
+# parallel_id = tuecl/21
+# text = Deniz uxlagandi.
+1	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	2	nsubj	_	_
+2	uxlagandi	uxla	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	_	_	2	punct	_	_
+
+# sent_id = 22
+# parallel_id = tuecl/22
+# text = Deniz uxlagan edi.
+1	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	2	nsubj	_	_
+2	uxlagan	uxla	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Part	0	root	_	_
+3	edi	edi	AUX	_	Tense=Past	2	cop	_	SpaceAfter=No
+4	.	.	PUNCT	_	_	2	punct	_	_
+
+# sent_id = 23
+# parallel_id = tuecl/23
+# text = Deniz uxlagan boʻladi.
+1	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	2	nsubj	_	_
+2	uxlagan	uxla	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Part	0	root	_	_
+3	boʻladi	boʻl	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut	2	aux	_	SpaceAfter=No
+4	.	.	PUNCT	_	_	2	punct	_	_
+
+# sent_id = 24
+# parallel_id = tuecl/24
+# text = Onasining orzusi Denizning yaxshi maktabda oʻqishi edi.
+1	Onasining	ona	NOUN	_	Case=Gen|Number=Sing|Poss=Yes	2	nmod	_	_
+2	orzusi	orzu	NOUN	_	Case=Nom|Number=Sing|Poss=Yes	6	nsubj	_	_
+3	Denizning	Deniz	PROPN	_	Case=Gen|Number=Sing	6	nmod	_	_
+4	yaxshi	yaxshi	ADJ	_	_	5	amod	_	_
+5	maktabda	maktab	NOUN	_	Case=Loc|Number=Sing	6	obl	_	_
+6	oʻqishi	oʻqi	VERB	_	VerbForm=Vnoun	0	root	_	_
+7	edi	edi	AUX	_	Tense=Past	6	cop	_	SpaceAfter=No
+8	.	.	PUNCT	_	_	6	punct	_	_
+
+# sent_id = 25
+# parallel_id = tuecl/25
+# text = Denizning yaxshi maktabda oʻqimasligi onasini havotirga solardi.
+1	Denizning	Deniz	PROPN	_	Case=Gen|Number=Sing	4	nmod	_	_
+2	yaxshi	yaxshi	ADJ	_	_	3	amod	_	_
+3	maktabda	maktab	NOUN	_	Case=Loc|Number=Sing	4	obl	_	_
+4	oʻqimasligi	oʻqi	VERB	_	Polarity=Neg|VerbForm=Vnoun	7	csubj	_	_
+5	onasini	ona	NOUN	_	Case=Acc|Number=Sing	7	obj	_	_
+6	havotirga	havotir	NOUN	_	Case=Dat|Number=Sing	7	compound	_	_
+7	solardi	sol	VERB	_	Aspect=Prog|Mood=Ind|Number=Sing|Person=3|Tense=Past	0	root	_	SpaceAfter=No
+8	.	.	PUNCT	_	_	7	punct	_	_
+
+# sent_id = 26
+# parallel_id = tuecl/26
+# text = Stolda koʻp kitob bor, kitob javonida esa yoʻq.
+1	Stolda	stol	NOUN	_	Case=Loc|Number=Sing	4	obl	_	_
+2	koʻp	koʻp	ADJ	_	_	3	amod	_	_
+3	kitob	kitob	NOUN	_	Case=Nom|Number=Sing	4	nsubj	_	_
+4	bor	bor	ADJ	_	_	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	_	_	9	punct	_	_
+6	kitob	kitob	NOUN	_	Case=Nom|Number=Sing	7	nmod	_	_
+7	javonida	javon	NOUN	_	Case=Loc|Number=Sing|Poss=Yes	9	obl	_	_
+8	esa	esa	CCONJ	_	_	9	cc	_	_
+9	yoʻq	yoʻq	ADJ	_	_	4	conj	_	SpaceAfter=No
+10	.	.	PUNCT	_	_	4	punct	_	_
+
+# sent_id = 27
+# parallel_id = tuecl/27
+# text = Denizning hech qanday kitobi yoʻq.
+1	Denizning	Deniz	PROPN	_	Case=Gen|Number=Sing	4	nmod:poss	_	_
+2	hech	hech	DET	_	PronType=Neg	3	compound	_	_
+3	qanday	qanday	PRON	_	PronType=Int	4	amod	_	_
+4	kitobi	kitob	NOUN	_	Case=Nom|Number=Sing|Poss=Yes	5	nsubj	_	_
+5	yoʻq	yoʻq	ADJ	_	_	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	_	_	5	punct	_	_
+
+# sent_id = 28
+# parallel_id = tuecl/28
+# text = Deniz uyda emasdi.
+1	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	2	nsubj	_	_
+2	uyda	uy	NOUN	_	Case=Loc|Number=Sing	0	root	_	_
+3	emasdi	emas	AUX	_	Polarity=Neg|Tense=Past	2	cop	_	SpaceAfter=No
+4	.	.	PUNCT	_	_	2	punct	_	_
+
+# sent_id = 29
+# parallel_id = tuecl/29
+# text = Deniz vaqtida uxlamaydi.
+1	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	3	nsubj	_	_
+2	vaqtida	vaqt	NOUN	_	Case=Loc|Number=Sing	3	obl	_	_
+3	uxlamaydi	uxla	VERB	_	Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Pres	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	_	_	3	punct	_	_
+
+# sent_id = 30
+# parallel_id = tuecl/30
+# text = Deniz uxlay olmaydi.
+1	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	3	nsubj	_	_
+2	uxlay	uxla	VERB	_	VerbForm=Conv	3	compound	_	_
+3	olmaydi	ol	VERB	_	Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Pres	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	_	_	3	punct	_	_
+
+# sent_id = 31
+# parallel_id = tuecl/31
+# text = Deniz vaqtida uxlay olmasligi mumkin.
+1	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	4	nsubj	_	_
+2	vaqtida	vaqt	NOUN	_	Case=Loc|Number=Sing	4	obl	_	_
+3	uxlay	uxla	VERB	_	VerbForm=Conv	4	compound	_	_
+4	olmasligi	ol	VERB	_	Number=Sing|Person=3|Polarity=Neg	0	root	_	_
+5	mumkin	mumkin	AUX	_	_	4	aux	_	SpaceAfter=No
+6	.	.	PUNCT	_	_	4	punct	_	_
+
+# sent_id = 32
+# parallel_id = tuecl/32
+# text = Deniz onasini koʻrmay qoldi.
+1	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	4	nsubj	_	_
+2	onasini	ona	NOUN	_	Case=Acc|Number=Sing	4	obj	_	_
+3	koʻrmay	koʻr	VERB	_	Polarity=Neg|VerbForm=Conv	4	compound	_	_
+4	qoldi	qol	VERB	_	Number=Sing|Person=3|Tense=Past	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	_	_	4	punct	_	_
+
+# sent_id = 33
+# parallel_id = tuecl/33
+# text = Deniz onasini koʻrib qolmadi.
+1	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	4	nsubj	_	_
+2	onasini	ona	NOUN	_	Case=Acc|Number=Sing|Poss=Yes	4	obj	_	_
+3	koʻrib	koʻr	VERB	_	VerbForm=Conv	4	compound	_	_
+4	qolmadi	qol	VERB	_	Number=Sing|Person=3|Polarity=Neg|Tense=Past	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	_	_	4	punct	_	_
+
+# sent_id = 34
+# parallel_id = tuecl/34
+# text = Deniz onasini koʻrmay qolmadi.
+1	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	4	nsubj	_	_
+2	onasini	ona	NOUN	_	Case=Acc|Number=Sing|Poss=Yes	4	obj	_	_
+3	koʻrmay	koʻr	VERB	_	Polarity=Neg|VerbForm=Conv	4	compound	_	_
+4	qolmadi	qol	VERB	_	Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Past	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	_	_	4	punct	_	_
+
+# sent_id = 35
+# parallel_id = tuecl/35
+# text = Oʻqiganlarini tushunmaydi.
+1	Oʻqiganlarini	oʻqi	VERB	_	Case=Acc|Number=Plur|VerbForm=Part	2	xcomp	_	_
+2	tushunmaydi	tushun	VERB	_	Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Pres	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	_	_	2	punct	_	_
+
+# sent_id = 36
+# parallel_id = tuecl/36
+# text = Oʻqiganlarini tushungani yoʻq.
+1	Oʻqiganlarini	oʻqi	VERB	_	Case=Acc|Number=Plur|VerbForm=Part	2	xcomp	_	_
+2	tushungani	tushun	VERB	_	Number=Sing|Person=3|Tense=Past|VerbForm=Part	0	root	_	_
+3	yoʻq	yoʻq	AUX	_	Polarity=Neg	2	aux	_	SpaceAfter=No
+4	.	.	PUNCT	_	_	2	punct	_	_
+
+# sent_id = 37
+# parallel_id = tuecl/37
+# text = Oʻqiganlarini tushunmaydi emas.
+1	Oʻqiganlarini	oʻqi	VERB	_	Case=Acc|Number=Plur|VerbForm=Part	2	xcomp	_	_
+2	tushunmaydi	tushun	VERB	_	Mood=Ind|Number=Sing|Person=3|Polarity=Neg|Tense=Pres	0	root	_	_
+3	emas	emas	AUX	_	Polarity=Neg	2	cop	_	SpaceAfter=No
+4	.	.	PUNCT	_	_	2	punct	_	_
+
+# sent_id = 38
+# parallel_id = tuecl/38
+# text = Oʻqishni emas, rasm chizishni yaxshi koʻradi.
+1	Oʻqishni	oʻqi	VERB	_	Case=Acc|VerbForm=Vnoun	7	xcomp	_	_
+2	emas	emas	AUX	_	Polarity=Neg	1	cop	_	SpaceAfter=No
+3	,	,	PUNCT	_	_	5	punct	_	_
+4	rasm	rasm	NOUN	_	Case=Nom|Number=Sing	5	obj	_	_
+5	chizishni	chiz	VERB	_	Case=Acc|VerbForm=Vnoun	1	conj	_	_
+6	yaxshi	yaxshi	ADJ	_	_	7	compound	_	_
+7	koʻradi	koʻr	VERB	_	_	0	root	_	SpaceAfter=No
+8	.	.	PUNCT	_	_	7	punct	_	_
+
+# sent_id = 39
+# parallel_id = tuecl/39
+# text = Deniz xonada emasdi.
+1	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	2	nsubj	_	_
+2	xonada	xona	NOUN	_	Case=Loc|Number=Sing	0	root	_	_
+3	emasdi	emas	AUX	_	Polarity=Neg|Tense=Past	2	cop	_	SpaceAfter=No
+4	.	.	PUNCT	_	_	2	punct	_	_
+
+# sent_id = 40
+# parallel_id = tuecl/40
+# text = Deniz xonada yoʻq edi.
+1	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	2	nsubj	_	_
+2	xonada	xona	NOUN	_	Case=Loc|Number=Sing	3	obl	_	_
+3	yoʻq	yoʻq	ADJ	_	_	0	root	_	_
+4	edi	edi	AUX	_	Tense=Past	3	cop	_	SpaceAfter=No
+5	.	.	PUNCT	_	_	3	punct	_	_
+
+# sent_id = 41
+# parallel_id = tuecl/41
+# text = Deniz kitob oʻqimoqchi.
+1	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	3	nsubj	_	_
+2	kitob	kitob	NOUN	_	Case=Nom|Number=Sing	3	obj	_	_
+3	oʻqimoqchi	oʻqi	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	_	_	3	punct	_	_
+
+# sent_id = 42
+# parallel_id = tuecl/42
+# text = Deniz kitob oʻqishni xohlaydi.
+1	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	4	nsubj	_	_
+2	kitob	kitob	NOUN	_	Case=Nom|Number=Sing	3	obj	_	_
+3	oʻqishni	oʻqi	VERB	_	Case=Acc|VerbForm=Vnoun	4	xcomp	_	_
+4	xohlaydi	xohla	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	_	_	4	punct	_	_
+
+# sent_id = 43
+# parallel_id = tuecl/43
+# text = Deniz otasining kitob oʻqib berishini xohlaydi.
+1	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	6	nsubj	_	_
+2	otasining	ota	NOUN	_	Case=Gen|Number=Sing|Poss=Yes	5	nsubj	_	_
+3	kitob	kitob	NOUN	_	Case=Nom|Number=Sing	5	obj	_	_
+4	oʻqib	oʻqi	VERB	_	VerbForm=Conv	5	compound	_	_
+5	berishini	ber	VERB	_	Case=Acc|VerbForm=Vnoun	6	ccomp	_	_
+6	xohlaydi	xohla	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut	0	root	_	SpaceAfter=No
+7	.	.	PUNCT	_	_	6	punct	_	_
+
+# sent_id = 44
+# parallel_id = tuecl/44
+# text = Deniz oʻzi bilan oʻzi boʻlishni yaxshi koʻradi.
+1	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	7	nsubj	_	_
+2	oʻzi	oʻzi	PRON	_	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	compound	_	_
+3	bilan	bilan	ADP	_	_	2	case	_	_
+4	oʻzi	oʻzi	PRON	_	Case=Nom|Number=Sing|Person=3|PronType=Prs	5	obl	_	_
+5	boʻlishni	boʻl	VERB	_	Case=Acc|VerbForm=Vnoun	7	xcomp	_	_
+6	yaxshi	yaxshi	ADJ	_	_	7	compound:lvc	_	_
+7	koʻradi	koʻr	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+8	.	.	PUNCT	_	_	7	punct	_	_
+
+# sent_id = 45
+# parallel_id = tuecl/45
+# text = Onasining kitob oʻqishi Denizning uxlashini osonlashtiradi.
+1	Onasining	ona	NOUN	_	Case=Gen|Number=Sing|Poss=Yes	3	nsubj	_	_
+2	kitob	kitob	NOUN	_	Case=Nom|Number=Sing	3	obj	_	_
+3	oʻqishi	oʻqi	VERB	_	VerbForm=Vnoun	6	csubj	_	_
+4	Denizning	Deniz	PROPN	_	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	uxlashini	uxla	VERB	_	Case=Acc|VerbForm=Vnoun	6	ccomp	_	_
+6	osonlashtiradi	osonlash	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+7	.	.	PUNCT	_	_	6	punct	_	_
+
+# sent_id = 46
+# parallel_id = tuecl/46
+# text = Bolalarga kitob oʻqish ularning rivojlanishi uchun muhimdir.
+1	Bolalarga	bola	NOUN	_	Case=Dat|Number=Plur	3	obl	_	_
+2	kitob	kitob	NOUN	_	Case=Nom|Number=Sing	3	obj	_	_
+3	oʻqish	oʻqi	VERB	_	VerbForm=Vnoun	7	csubj	_	_
+4	ularning	u	PRON	_	Case=Gen|Number=Plur|Person=3|PronType=Prs	5	nmod:poss	_	_
+5	rivojlanishi	rivojlan	VERB	_	VerbForm=Vnoun	7	obl	_	_
+6	uchun	uchun	ADP	_	_	5	case	_	_
+7	muhimdir	muhim	ADJ	_	_	0	root	_	SpaceAfter=No
+8	.	.	PUNCT	_	_	7	punct	_	_
+
+# sent_id = 47
+# parallel_id = tuecl/47
+# text = Deniz kitob oʻqib uxlayapti.
+1	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	4	nsubj	_	_
+2	kitob	kitob	NOUN	_	Case=Nom|Number=Sing	3	obj	_	_
+3	oʻqib	oʻqi	VERB	_	VerbForm=Conv	4	advcl	_	_
+4	uxlayapti	uxla	VERB	_	Aspect=Prog|Mood=Ind|Number=Sing|Person=3|Tense=Pres	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	_	_	4	punct	_	_
+
+# sent_id = 48
+# parallel_id = tuecl/48
+# text = Deniz taʼtil ekanligini unutib, maktabga ketgan.
+1	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	7	nsubj	_	_
+2	taʼtil	taʼtil	NOUN	_	Case=Nom|Number=Sing	4	obj	_	_
+3	ekanligini	ekan	AUX	_	Case=Acc	2	cop	_	_
+4	unutib	unut	VERB	_	VerbForm=Conv	7	advcl	_	SpaceAfter=No
+5	,	,	PUNCT	_	_	4	punct	_	_
+6	maktabga	maktab	NOUN	_	Case=Dat|Number=Sing	7	obl	_	_
+7	ketgan	ket	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+8	.	.	PUNCT	_	_	7	punct	_	_
+
+# sent_id = 49
+# parallel_id = tuecl/49
+# text = Deniz taʼtil ekanligini unutib, sumkasini olib, maktabga ketgan.
+1	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	10	nsubj	_	_
+2	taʼtil	taʼtil	NOUN	_	Case=Nom|Number=Sing	4	obj	_	_
+3	ekanligini	ekan	AUX	_	Case=Acc	2	cop	_	_
+4	unutib	unut	VERB	_	VerbForm=Conv	10	advcl	_	SpaceAfter=No
+5	,	,	PUNCT	_	_	4	punct	_	_
+6	sumkasini	sumka	NOUN	_	Case=Acc|Number=Sing|Poss=Yes	7	obj	_	_
+7	olib	ol	VERB	_	VerbForm=Conv	10	advcl	_	SpaceAfter=No
+8	,	,	PUNCT	_	_	7	punct	_	_
+9	maktabga	maktab	NOUN	_	Case=Dat|Number=Sing	10	obl	_	_
+10	ketgan	ket	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+11	.	.	PUNCT	_	_	10	punct	_	_
+
+# sent_id = 50
+# parallel_id = tuecl/50
+# text = Deniz kech uxlasa, maktabga kechikadi.
+1	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	3	nsubj	_	_
+2	kech	kech	ADV	_	_	3	advmod	_	_
+3	uxlasa	uxla	VERB	_	Mood=Cnd|Number=Sing|Person=3	6	advcl	_	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	_	_
+5	maktabga	maktab	NOUN	_	Case=Dat|Number=Sing	6	obl	_	_
+6	kechikadi	kechik	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut	0	root	_	SpaceAfter=No
+7	.	.	PUNCT	_	_	6	punct	_	_
+
+# sent_id = 51
+# parallel_id = tuecl/51
+# text = Deniz kech uxlasa, maktabga kech qoladi.
+1	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	3	nsubj	_	_
+2	kech	kech	ADV	_	_	3	advmod	_	_
+3	uxlasa	uxla	VERB	_	Mood=Cnd|Number=Sing|Person=3	7	advcl	_	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	_	_
+5	maktabga	maktab	NOUN	_	Case=Dat|Number=Sing	7	obl	_	_
+6	kech	kech	ADV	_	_	7	compound:lvc	_	_
+7	qoladi	qol	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut	0	root	_	SpaceAfter=No
+8	.	.	PUNCT	_	_	7	punct	_	_
+
+# sent_id = 52
+# parallel_id = tuecl/52
+# text = Agar bola uxlaganida, kino koʻrgan boʻlardik.
+1	Agar	agar	SCONJ	_	_	3	mark	_	_
+2	bola	bola	NOUN	_	Case=Nom|Number=Sing	3	nsubj	_	_
+3	uxlaganida	uxla	VERB	_	Mood=Cnd|Number=Sing|Person=3|Tense=Past	7	advcl	_	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	_	_
+5	kino	kino	NOUN	_	Case=Nom|Number=Sing	6	obj	_	_
+6	koʻrgan	koʻr	VERB	_	VerbForm=Part	7	compound	_	_
+7	boʻlardik	boʻl	VERB	_	Mood=Irr|Number=Plur|Person=1|Tense=Past	0	root	_	SpaceAfter=No
+8	.	.	PUNCT	_	_	7	punct	_	_
+
+# sent_id = 53
+# parallel_id = tuecl/53
+# text = Agar bola uyga ketmasdan uxlab qolsa, borganimizda uygʻotishimiz kerak boʻladi.
+1	Agar	agar	SCONJ	_	_	6	mark	_	_
+2	bola	bola	NOUN	_	Case=Nom|Number=Sing	6	nsubj	_	_
+3	uyga	uy	NOUN	_	Case=Dat|Number=Sing	4	obl	_	_
+4	ketmasdan	ket	VERB	_	Polarity=Neg|VerbForm=Conv	6	advcl	_	_
+5	uxlab	uxla	VERB	_	VerbForm=Conv	6	compound	_	_
+6	qolsa	qol	VERB	_	Mood=Cnd|Number=Sing|Person=3	9	advcl	_	SpaceAfter=No
+7	,	,	PUNCT	_	_	6	punct	_	_
+8	borganimizda	bor	VERB	_	Case=Loc|Number=Plur|Person=1	9	advcl	_	_
+9	uygʻotishimiz	uygʻot	VERB	_	Number=Plur|Person=1|VerbForm=Vnoun	0	root	_	_
+10	kerak	kerak	AUX	_	_	9	aux	_	_
+11	boʻladi	boʻl	AUX	_	Tense=Fut	9	aux	_	SpaceAfter=No
+12	.	.	PUNCT	_	_	9	punct	_	_
+
+# sent_id = 54
+# parallel_id = tuecl/54
+# text = Hechqisi yoʻq.
+1	Hechqisi	hechqisi	PRON	_	PronType=Neg	2	compound	_	_
+2	yoʻq	yoʻq	ADJ	_	_	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	_	_	2	punct	_	_
+
+# sent_id = 55
+# parallel_id = tuecl/55
+# text = Hech qaysisi yoʻq.
+1	Hech	hech	DET	_	PronType=Neg	2	compound	_	_
+2	qaysisi	qaysi	PRON	_	Case=Nom|Number=Sing|PronType=Int	3	nsubj	_	_
+3	yoʻq	yoʻq	ADJ	_	_	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	_	_	3	punct	_	_
+
+# sent_id = 56
+# parallel_id = tuecl/56
+# text = Menimcha, bola erta uxlaydi.
+1	Menimcha	menimcha	ADV	_	_	5	discourse	_	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	_	_
+3	bola	bola	NOUN	_	Case=Nom|Number=Sing	5	nsubj	_	_
+4	erta	erta	ADV	_	_	5	advmod	_	_
+5	uxlaydi	uxla	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Fut	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	_	_	5	punct	_	_
+
+# sent_id = 57
+# parallel_id = tuecl/57
+# text = Deniz birodarini yomon koʻradi.
+1	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	4	nsubj	_	_
+2	birodarini	birodar	NOUN	_	Case=Acc|Number=Plur|Poss=Yes	4	obj	_	_
+3	yomon	yomon	ADJ	_	_	4	compound:lvc	_	_
+4	koʻradi	koʻr	VERB	_	_	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	_	_	4	punct	_	_
+
+# sent_id = 58
+# parallel_id = tuecl/58
+# text = Ertangi kunni intiqlik bilan kutaman.
+1	Ertangi	ertangi	ADJ	_	_	2	amod	_	_
+2	kunni	kun	NOUN	_	Case=Acc|Number=Sing	5	obj	_	_
+3	intiqlik	intiqlik	NOUN	_	Case=Nom|Number=Sing	5	obl	_	_
+4	bilan	bilan	ADP	_	_	3	case	_	_
+5	kutaman	kut	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Fut	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	_	_	5	punct	_	_
+
+# sent_id = 59
+# parallel_id = tuecl/59
+# text = Kasalxona davlat xizmatiga topshirildi.
+1	Kasalxona	kasalxona	NOUN	_	Case=Nom|Number=Sing	4	nsubj:pass	_	_
+2	davlat	davlat	NOUN	_	Case=Nom|Number=Sing	3	nmod	_	_
+3	xizmatiga	xizmat	NOUN	_	Case=Dat|Number=Sing	4	obl	_	_
+4	topshirildi	topshir	VERB	_	Mood=Ind|Tense=Past|Voice=Pass	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	_	_	4	punct	_	_
+
+# sent_id = 60
+# parallel_id = tuecl/60
+# text = Katta uydagi bola kitob oʻqiyapti.
+1	Katta	katta	ADJ	_	_	2	amod	_	_
+2	uydagi	uy	NOUN	_	Case=Loc|Number=Sing	3	obl	_	_
+3	bola	bola	NOUN	_	Case=Nom|Number=Sing	5	nsubj	_	_
+4	kitob	kitob	NOUN	_	Case=Nom|Number=Sing	5	obj	_	_
+5	oʻqiyapti	oʻqi	VERB	_	Aspect=Prog|Mood=Ind|Number=Sing|Person=3|Tense=Pres	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	_	_	5	punct	_	_
+
+# sent_id = 61
+# parallel_id = tuecl/61
+# text = Katta uydagi kitob oʻqiyapti.
+1	Katta	katta	ADJ	_	_	2	amod	_	_
+2	uydagi	uy	NOUN	_	Case=Loc|Number=Sing	4	nsubj	_	_
+3	kitob	kitob	NOUN	_	Case=Nom|Number=Sing	4	obj	_	_
+4	oʻqiyapti	oʻqi	VERB	_	Aspect=Prog|Mood=Ind|Number=Sing|Person=3|Tense=Pres	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	_	_	4	punct	_	_
+
+# sent_id = 62
+# parallel_id = tuecl/62
+# text = Katta uydagi bolaning sochi sargʻish, kichik uydaginiki jigarrang.
+1	Katta	katta	ADJ	_	_	2	amod	_	_
+2	uydagi	uy	NOUN	_	Case=Loc|Number=Sing	3	obl	_	_
+3	bolaning	bola	NOUN	_	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	sochi	soch	NOUN	_	Case=Nom|Number=Sing|Poss=Yes	5	nsubj	_	_
+5	sargʻish	sargʻish	ADJ	_	_	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	_	_	8	punct	_	_
+7	kichik	kichik	ADJ	_	_	8	amod	_	_
+8	uydaginiki	uy	NOUN	_	Case=Loc|Number=Sing	9	nsubj	_	_
+9	jigarrang	jigarrang	ADJ	_	_	5	parataxis	_	SpaceAfter=No
+10	.	.	PUNCT	_	_	5	punct	_	_
+
+# sent_id = 63
+# parallel_id = tuecl/63
+# text = Piyozni toʻq pushti rangga aylanguniga qadar qovuring.
+1	Piyozni	piyoz	NOUN	_	Case=Acc|Number=Sing	7	obj	_	_
+2	toʻq	toʻq	ADJ	_	_	3	amod	_	_
+3	pushti	pushti	ADJ	_	_	4	amod	_	_
+4	rangga	rang	NOUN	_	Case=Dat|Number=Sing	5	obl	_	_
+5	aylanguniga	aylan	VERB	_	Case=Dat|VerbForm=Vnoun	7	advcl	_	_
+6	qadar	qadar	ADP	_	_	5	case	_	_
+7	qovuring	qovur	VERB	_	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin	0	root	_	SpaceAfter=No
+8	.	.	PUNCT	_	_	7	punct	_	_
+
+# sent_id = 64
+# parallel_id = tuecl/64
+# text = Uyning oldida uchta mashina uchun toʻxtash joyi bor.
+1	Uyning	uy	NOUN	_	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	oldida	old	NOUN	_	Case=Loc|Number=Sing	8	obl	_	_
+3	uchta	uch	NUM	_	NumType=Card	4	nummod	_	_
+4	mashina	mashina	NOUN	_	Case=Nom|Number=Sing	7	obl	_	_
+5	uchun	uchun	ADP	_	_	4	case	_	_
+6	toʻxtash	toʻxta	VERB	_	VerbForm=Vnoun	7	compound	_	_
+7	joyi	joy	NOUN	_	Case=Nom|Number=Sing|Poss=Yes	8	nsubj	_	_
+8	bor	bor	ADJ	_	_	0	root	_	SpaceAfter=No
+9	.	.	PUNCT	_	_	8	punct	_	_
+
+# sent_id = 65
+# parallel_id = tuecl/65
+# text = Muqaddas kitobsiz dinlar ham bor.
+1	Muqaddas	muqaddas	ADJ	_	_	2	amod	_	_
+2	kitobsiz	kitobsiz	ADJ	_	_	3	amod	_	_
+3	dinlar	din	NOUN	_	Case=Nom|Number=Plur	5	nsubj	_	_
+4	ham	ham	ADV	_	_	5	advmod	_	_
+5	bor	bor	ADJ	_	_	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	_	_	5	punct	_	_
+
+# sent_id = 66
+# parallel_id = tuecl/66
+# text = Kichkina derazali uyda yorugʻlik yetarli emas.
+1	Kichkina	kichkina	ADJ	_	_	2	amod	_	_
+2	derazali	derazali	ADJ	_	_	3	amod	_	_
+3	uyda	uy	NOUN	_	Case=Loc|Number=Sing	5	obl	_	_
+4	yorugʻlik	yorugʻlik	NOUN	_	Case=Nom|Number=Sing	5	nsubj	_	_
+5	yetarli	yetarli	ADJ	_	_	0	root	_	_
+6	emas	emas	AUX	_	Polarity=Neg	5	cop	_	SpaceAfter=No
+7	.	.	PUNCT	_	_	5	punct	_	_
+
+# sent_id = 67
+# parallel_id = tuecl/67
+# text = Deniz uyga keldimi?
+1	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	3	nsubj	_	_
+2	uyga	uy	NOUN	_	Case=Dat|Number=Sing	3	obl	_	_
+3	keldimi	kel	VERB	_	Mood=Int|Number=Sing|Person=3|Tense=Past	0	root	_	SpaceAfter=No
+4	?	?	PUNCT	_	_	3	punct	_	_
+
+# sent_id = 68
+# parallel_id = tuecl/68
+# text = Deniz uyga kelganmidi?
+1	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	3	nsubj	_	_
+2	uyga	uy	NOUN	_	Case=Dat|Number=Sing	3	obl	_	_
+3	kelganmidi	kel	VERB	_	Mood=Int|Number=Sing|Person=3|Tense=Past	0	root	_	SpaceAfter=No
+4	?	?	PUNCT	_	_	3	punct	_	_
+
+# sent_id = 69
+# parallel_id = tuecl/69
+# text = Deniz uydami?
+1	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	2	nsubj	_	_
+2	uydami	uy	NOUN	_	Case=Loc|Number=Sing	0	root	_	SpaceAfter=No
+3	?	?	PUNCT	_	_	2	punct	_	_
+
+# sent_id = 70
+# parallel_id = tuecl/70
+# text = Deniz uydamikan?
+1	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	2	nsubj	_	_
+2	uydamikan	uy	NOUN	_	Case=Loc|Number=Sing	0	root	_	SpaceAfter=No
+3	?	?	PUNCT	_	_	2	punct	_	_
+
+# sent_id = 71
+# parallel_id = tuecl/71
+# text = Deniz uyda edimi?
+1	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	2	nsubj	_	_
+2	uyda	uy	NOUN	_	Case=Loc|Number=Sing	0	root	_	_
+3	edimi	edi	AUX	_	Mood=Int|Tense=Past	2	cop	_	SpaceAfter=No
+4	?	?	PUNCT	_	_	2	punct	_	_
+
+# sent_id = 72
+# parallel_id = tuecl/72
+# text = Deniz uyda emasmidi?
+1	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	2	nsubj	_	_
+2	uyda	uy	NOUN	_	Case=Loc|Number=Sing	0	root	_	_
+3	emasmidi	emas	AUX	_	Mood=Int|Polarity=Neg|Tense=Past	2	cop	_	SpaceAfter=No
+4	?	?	PUNCT	_	_	2	punct	_	_
+
+# sent_id = 73
+# parallel_id = tuecl/73
+# text = Deniz uyda yoʻqmi?
+1	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	3	nsubj	_	_
+2	uyda	uy	NOUN	_	Case=Loc|Number=Sing	3	obl	_	_
+3	yoʻqmi	yoʻq	ADJ	_	_	0	root	_	SpaceAfter=No
+4	?	?	PUNCT	_	_	3	punct	_	_
+
+# sent_id = 74
+# parallel_id = tuecl/74
+# text = Uyda non bormi?
+1	Uyda	uy	NOUN	_	Case=Loc|Number=Sing	3	obl	_	_
+2	non	non	NOUN	_	Case=Nom|Number=Sing	3	nsubj	_	_
+3	bormi	bor	ADJ	_	_	0	root	_	SpaceAfter=No
+4	?	?	PUNCT	_	_	3	punct	_	_
+
+# sent_id = 75
+# parallel_id = tuecl/75
+# text = Non uyda bormi?
+1	Non	non	NOUN	_	Case=Nom|Number=Sing	3	nsubj	_	_
+2	uyda	uy	NOUN	_	Case=Loc|Number=Sing	3	obl	_	_
+3	bormi	bor	ADJ	_	_	0	root	_	SpaceAfter=No
+4	?	?	PUNCT	_	_	3	punct	_	_
+
+# sent_id = 76
+# parallel_id = tuecl/76
+# text = Uyda non bormi?
+1	Uyda	uy	NOUN	_	Case=Loc|Number=Sing	3	obl	_	_
+2	non	non	NOUN	_	Case=Nom|Number=Sing	3	nsubj	_	_
+3	bormi	bor	ADJ	_	_	0	root	_	SpaceAfter=No
+4	?	?	PUNCT	_	_	3	punct	_	_
+
+# sent_id = 77
+# parallel_id = tuecl/77
+# text = Oʻqiganingizni tushundingizmi?
+1	Oʻqiganingizni	oʻqi	VERB	_	Case=Acc|VerbForm=Part	2	xcomp	_	_
+2	tushundingizmi	tushun	VERB	_	Mood=Int|Number=Plur|Person=2|Tense=Past	0	root	_	SpaceAfter=No
+3	?	?	PUNCT	_	_	2	punct	_	_
+
+# sent_id = 78
+# parallel_id = tuecl/78
+# text = Ertalab Deniz kitobni Oyxonga berdimi?
+1	Ertalab	ertalab	ADV	_	_	5	advmod	_	_
+2	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	5	nsubj	_	_
+3	kitobni	kitob	NOUN	_	Case=Acc|Number=Sing	5	obj	_	_
+4	Oyxonga	Oyxon	PROPN	_	Case=Dat|Number=Sing	5	obl	_	_
+5	berdimi	ber	VERB	_	Mood=Int|Number=Sing|Person=3|Tense=Past	0	root	_	SpaceAfter=No
+6	?	?	PUNCT	_	_	5	punct	_	_
+
+# sent_id = 79
+# parallel_id = tuecl/79
+# text = Ertalab kitobni Oyxonga Deniz berdimi?
+1	Ertalab	ertalab	ADV	_	_	5	advmod	_	_
+2	kitobni	kitob	NOUN	_	Case=Acc|Number=Sing	5	obj	_	_
+3	Oyxonga	Oyxon	PROPN	_	Case=Dat|Number=Sing	5	obl	_	_
+4	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	5	nsubj	_	_
+5	berdimi	ber	VERB	_	Mood=Int|Number=Sing|Person=3|Tense=Past	0	root	_	SpaceAfter=No
+6	?	?	PUNCT	_	_	5	punct	_	_
+
+# sent_id = 80
+# parallel_id = tuecl/80
+# text = Ertalab Deniz Oyxonga kitobni berdimi?
+1	Ertalab	ertalab	ADV	_	_	5	advmod	_	_
+2	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	5	nsubj	_	_
+3	Oyxonga	Oyxon	PROPN	_	Case=Dat|Number=Sing	5	obl	_	_
+4	kitobni	kitob	NOUN	_	Case=Acc|Number=Sing	5	obj	_	_
+5	berdimi	ber	VERB	_	Mood=Int|Number=Sing|Person=3|Tense=Past	0	root	_	SpaceAfter=No
+6	?	?	PUNCT	_	_	5	punct	_	_
+
+# sent_id = 81
+# parallel_id = tuecl/81
+# text = Ertalab Deniz kitobni Oyxonga berdimi?
+1	Ertalab	ertalab	ADV	_	_	5	advmod	_	_
+2	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	5	nsubj	_	_
+3	kitobni	kitob	NOUN	_	Case=Acc|Number=Sing	5	obj	_	_
+4	Oyxonga	Oyxon	PROPN	_	Case=Dat|Number=Sing	5	obl	_	_
+5	berdimi	ber	VERB	_	Mood=Int|Number=Sing|Person=3|Tense=Past	0	root	_	SpaceAfter=No
+6	?	?	PUNCT	_	_	5	punct	_	_
+
+# sent_id = 82
+# parallel_id = tuecl/82
+# text = Deniz kitobni Oyxonga ertalab berdimi?
+1	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	5	nsubj	_	_
+2	kitobni	kitob	NOUN	_	Case=Acc|Number=Sing	5	obj	_	_
+3	Oyxonga	Oyxon	PROPN	_	Case=Dat|Number=Sing	5	obl	_	_
+4	ertalab	ertalab	ADV	_	_	5	advmod	_	_
+5	berdimi	ber	VERB	_	Mood=Int|Number=Sing|Person=3|Tense=Past	0	root	_	SpaceAfter=No
+6	?	?	PUNCT	_	_	5	punct	_	_
+
+# sent_id = 83
+# parallel_id = tuecl/83
+# text = Menga koʻkni bera olasizmi?
+1	Menga	men	PRON	_	Case=Dat|Number=Sing	4	obl	_	_
+2	koʻkni	koʻk	ADJ	_	Case=Acc	4	obj	_	_
+3	bera	ber	VERB	_	VerbForm=Conv	4	compound	_	_
+4	olasizmi	ol	VERB	_	Mood=Int|Number=Sing|Person=2|Tense=Fut	0	root	_	SpaceAfter=No
+5	?	?	PUNCT	_	_	4	punct	_	_
+
+# sent_id = 84
+# parallel_id = tuecl/84
+# text = Buning koʻk rangi chiroyliroq.
+1	Buning	bu	PRON	_	Case=Gen|Number=Sing|PronType=Dem	3	nmod:poss	_	_
+2	koʻk	koʻk	ADJ	_	_	3	amod	_	_
+3	rangi	rang	NOUN	_	Case=Nom|Number=Sing	4	nsubj	_	_
+4	chiroyliroq	chiroyli	ADJ	_	Degree=Cmp	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	_	_	4	punct	_	_
+
+# sent_id = 85
+# parallel_id = tuecl/85
+# text = Mening mashinam Deniznikining koʻki.
+1	Mening	men	PRON	_	Case=Gen|Number=Sing|Person=1|PronType=Prs	2	nmod:poss	_	_
+2	mashinam	mashina	NOUN	_	Case=Nom|Number=Sing|Poss=Yes	4	nsubj	_	_
+3	Deniznikining	Deniz	PROPN	_	Case=Gen|Number=Sing|Poss=Yes	4	obl	_	_
+4	koʻki	koʻk	ADJ	_	_	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	_	_	4	punct	_	_
+
+# sent_id = 86
+# parallel_id = tuecl/86
+# text = Kitob oʻqilyapti.
+1	Kitob	kitob	NOUN	_	Case=Nom|Number=Sing	2	nsubj:pass	_	_
+2	oʻqilyapti	oʻqi	VERB	_	Aspect=Prog|Mood=Ind|Tense=Pres|Voice=Pass	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	_	_	2	punct	_	_
+
+# sent_id = 87
+# parallel_id = tuecl/87
+# text = Kitob barcha maktablarda oʻqitiladi.
+1	Kitob	kitob	NOUN	_	Case=Nom|Number=Sing	4	nsubj:pass	_	_
+2	barcha	barcha	DET	_	PronType=Tot	3	det	_	_
+3	maktablarda	maktab	NOUN	_	Case=Loc|Number=Plur	4	obl	_	_
+4	oʻqitiladi	oʻqi	VERB	_	Mood=Ind|Tense=Pres|Voice=Pass	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	_	_	4	punct	_	_
+
+# sent_id = 88
+# parallel_id = tuecl/88
+# text = Denizni uxlatishdi.
+1	Denizni	Deniz	PROPN	_	Case=Acc|Number=Sing	2	obj	_	_
+2	uxlatishdi	uxla	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	_	_	2	punct	_	_
+
+# sent_id = 89
+# parallel_id = tuecl/89
+# text = Ular ketdi.
+1	Ular	u	PRON	_	Case=Nom|Number=Plur|Person=3|PronType=Prs	2	nsubj	_	_
+2	ketdi	ket	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	_	_	2	punct	_	_
+
+# sent_id = 90
+# parallel_id = tuecl/90
+# text = U ketdi.
+1	U	u	PRON	_	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	ketdi	ket	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	_	_	2	punct	_	_
+
+# sent_id = 91
+# parallel_id = tuecl/91
+# text = Deniz bu yerga kelib, boʻsh vaqtlarida kitob oʻqir edi.
+1	Deniz	Deniz	PROPN	_	Case=Nom|Number=Sing	4	nsubj	_	_
+2	bu	bu	DET	_	PronType=Dem	3	det	_	_
+3	yerga	yer	NOUN	_	Case=Dat|Number=Sing	4	obl	_	_
+4	kelib	kel	VERB	_	VerbForm=Conv	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	_	_	9	punct	_	_
+6	boʻsh	boʻsh	ADJ	_	_	7	amod	_	_
+7	vaqtlarida	vaqt	NOUN	_	Case=Loc|Number=Plur	9	obl	_	_
+8	kitob	kitob	NOUN	_	Case=Nom|Number=Sing	9	obj	_	_
+9	oʻqir	oʻqi	VERB	_	Number=Sing|Person=3	4	conj	_	_
+10	edi	edi	AUX	_	Tense=Past	9	cop	_	SpaceAfter=No
+11	.	.	PUNCT	_	_	4	punct	_	_
+
+# sent_id = 92
+# parallel_id = tuecl/92
+# text = Siz biz bilan kelasiz, toʻgʻrimi?
+1	Siz	siz	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	4	nsubj	_	_
+2	biz	biz	PRON	_	Case=Nom|Number=Plur	4	obl	_	_
+3	bilan	bilan	ADP	_	_	2	case	_	_
+4	kelasiz	kel	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Fut	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	_	_	4	punct	_	_
+6	toʻgʻrimi	toʻgʻri	ADJ	_	_	4	discourse	_	SpaceAfter=No
+7	?	?	PUNCT	_	_	6	punct	_	_
+
+# sent_id = 93
+# parallel_id = tuecl/93
+# text = Bu shunday kitobki, uni oʻqigan dunyoga boshqacha nazar bilan qaraydi.
+1	Bu	bu	PRON	_	Case=Nom|Number=Sing|PronType=Dem	3	nsubj	_	_
+2	shunday	shunday	DET	_	PronType=Dem	3	amod	_	_
+3	kitobki	kitob	NOUN	_	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	_	_
+5	uni	u	PRON	_	Case=Acc|Number=Sing|PronType=Prs	6	obj	_	_
+6	oʻqigan	oʻqi	VERB	_	VerbForm=Part	11	csubj	_	_
+7	dunyoga	dunyo	NOUN	_	Case=Dat|Number=Sing	11	obl	_	_
+8	boshqacha	boshqacha	ADJ	_	_	9	amod	_	_
+9	nazar	nazar	NOUN	_	Case=Nom|Number=Sing	11	obl	_	_
+10	bilan	bilan	ADP	_	_	9	case	_	_
+11	qaraydi	qara	VERB	_	_	3	parataxis	_	SpaceAfter=No
+12	.	.	PUNCT	_	_	11	punct	_	_
+
+# sent_id = 94
+# parallel_id = tuecl/94
+# text = Sen avval tozalashni tugat, biz dazmollaymiz.
+1	Sen	sen	PRON	_	Case=Nom|Number=Sing|Person=2|PronType=Prs	4	nsubj	_	_
+2	avval	avval	ADV	_	_	4	advmod	_	_
+3	tozalashni	tozala	VERB	_	VerbForm=Vnoun	4	xcomp	_	_
+4	tugat	tugat	VERB	_	Mood=Imp|Number=Sing|Person=2	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	_	_	7	punct	_	_
+6	biz	biz	PRON	_	Case=Nom|Number=Plur|Person=1|PronType=Prs	7	nsubj	_	_
+7	dazmollaymiz	dazmolla	VERB	_	_	4	parataxis	_	SpaceAfter=No
+8	.	.	PUNCT	_	_	4	punct	_	_
+
+# sent_id = 95
+# parallel_id = tuecl/95
+# text = Aytishlaricha, Oysha Xoqonga uy vazifalarini bajarishda yordam bergan.
+1	Aytishlaricha	ayt	VERB	_	Number=Plur|Person=3	9	discourse	_	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	_	_
+3	Oysha	Oysha	PROPN	_	Case=Nom|Number=Sing	9	nsubj	_	_
+4	Xoqonga	Xoqon	PROPN	_	Case=Dat|Number=Sing	9	obl	_	_
+5	uy	uy	NOUN	_	Case=Nom|Number=Sing	6	compound	_	_
+6	vazifalarini	vazifa	NOUN	_	Case=Acc|Number=Plur|Poss=Yes	7	obj	_	_
+7	bajarishda	bajar	VERB	_	Case=Loc|VerbForm=Vnoun	9	xcomp	_	_
+8	yordam	yordam	NOUN	_	Case=Nom|Number=Sing	9	compound:lvc	_	_
+9	bergan	ber	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	SpaceAfter=No
+10	.	.	PUNCT	_	_	9	punct	_	_
+
+# sent_id = 96
+# parallel_id = tuecl/96
+# text = Umuman olganda, bu muvaffaqiyatli film edi.
+1	Umuman	umuman	ADV	_	_	6	advmod	_	_
+2	olganda	ol	VERB	_	_	1	compound	_	SpaceAfter=No
+3	,	,	PUNCT	_	_	1	punct	_	_
+4	bu	bu	PRON	_	Case=Nom|Number=Sing|PronType=Dem	6	nsubj	_	_
+5	muvaffaqiyatli	muvaffaqiyatli	ADJ	_	_	6	amod	_	_
+6	film	film	NOUN	_	Case=Nom|Number=Sing	0	root	_	_
+7	edi	edi	AUX	_	Tense=Past	6	cop	_	SpaceAfter=No
+8	.	.	PUNCT	_	_	6	punct	_	_
+
+# sent_id = 97
+# parallel_id = tuecl/97
+# text = Olma daraxtlari aprel-may oylarida gullab, oʻzaro changlanadi.
+1	Olma	olma	NOUN	_	Case=Nom|Number=Sing	2	nmod	_	_
+2	daraxtlari	daraxt	NOUN	_	Case=Nom|Number=Plur|Poss=Yes	7	nsubj	_	_
+3	aprel	aprel	NOUN	_	Case=Nom|Number=Sing	5	compound	_	SpaceAfter=No
+4	-	-	PUNCT	_	_	3	punct	_	SpaceAfter=No
+5	may	may	NOUN	_	Case=Nom|Number=Sing	6	nmod	_	_
+6	oylarida	oy	NOUN	_	Case=Loc|Number=Plur|Poss=Yes	7	obl	_	_
+7	gullab	gulla	VERB	_	VerbForm=Conv	0	root	_	SpaceAfter=No
+8	,	,	PUNCT	_	_	10	punct	_	_
+9	oʻzaro	oʻzaro	ADV	_	_	10	advcl	_	_
+10	changlanadi	changlan	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	conj	_	SpaceAfter=No
+11	.	.	PUNCT	_	_	7	punct	_	_
+

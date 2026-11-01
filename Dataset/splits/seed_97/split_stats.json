@@ -1,0 +1,10 @@
+{
+  "raw_sentences": 17837,
+  "gold_raw": 2859,
+  "gold_unique": 1098,
+  "silver_unique": 14863,
+  "gold_train": 878,
+  "dev": 110,
+  "test": 110,
+  "seed": 97
+}
