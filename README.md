@@ -50,7 +50,8 @@ python demo.py
 ## Citation
 If you utilize this repository for academic or commercial research, please cite our official MDPI publication:
 
-draft 
+draft
+<!-- 
 ```bibtex
 @article{UzMorphNeural2026,
   title={Adaptive Context–Morphology Gating and Grammatical Constraints for Neural Morphological Analysis of Uzbek},
@@ -60,6 +61,7 @@ draft
   publisher={MDPI}
 }
 ```
+-->
 
 ## Contribution
 Contributions are welcome! Please open an issue or submit a Pull Request enforcing identical Universal Dependencies (UD) morphotactic mappings.
