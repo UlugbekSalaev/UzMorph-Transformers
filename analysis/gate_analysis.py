@@ -1,6 +1,6 @@
 """Adaptive gate analysis on the Gold test partitions (manuscript Section 5.7).
 
-Needs the checkpoints written by run_ai_experiments.py:
+Needs the checkpoints written by run_experiments.py:
 
     python analysis/gate_analysis.py --regime curriculum --seeds 17 29 43 71 97
 """
