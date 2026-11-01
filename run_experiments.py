@@ -1,8 +1,8 @@
 """One-command experiment runner.
 
 Examples:
-  python run_ai_experiments.py --seeds 17 29 43 71 97 --variants full context morph concat no_consistency --regime curriculum --pretrain_epochs 5 --epochs 35
-  python run_ai_experiments.py --seeds 17 29 43 71 97 --variants full --regime gold --epochs 35
+  python run_experiments.py --seeds 17 29 43 71 97 --variants full context morph concat no_consistency --regime curriculum --pretrain_epochs 5 --epochs 35
+  python run_experiments.py --seeds 17 29 43 71 97 --variants full --regime gold --epochs 35
 
 Development and test data are Gold only. Silver is NEVER used for model selection or test.
 """
@@ -15,7 +15,7 @@ from config import cfg
 from data.scientific_data import prepare_scientific_data, audit_and_export
 from data.dataset import MorphDataset, collate_fn, ALL_TASKS
 from model.model import UzbekMorphModel
-from evaluate_ai_ready import evaluate_scientific
+from evaluate_ready import evaluate_scientific
 
 
 def set_seed(seed):
