@@ -1,4 +1,4 @@
-"""Journal-grade evaluation: strict 14-attribute exact match, lemma free decoding,
+"""Evaluation: strict 14-attribute exact match, lemma free decoding,
 OOV analysis, gate analysis, and invalid-combination rate.
 """
 import math
