@@ -48,7 +48,7 @@ python demo.py
 ```
 
 ## Citation
-If you utilize this repository for academic or commercial research, please cite our official MDPI publication:
+If you utilize this repository for academic or commercial research, please cite our official publication:
 
 draft
 <!-- 
